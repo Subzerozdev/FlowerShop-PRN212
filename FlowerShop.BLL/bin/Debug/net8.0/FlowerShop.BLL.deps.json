@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "FlowerShop.BLL/1.0.0": {
+        "dependencies": {
+          "FlowerShop.DAL": "1.0.0"
+        },
+        "runtime": {
+          "FlowerShop.BLL.dll": {}
+        }
+      },
+      "FlowerShop.DAL/1.0.0": {
+        "runtime": {
+          "FlowerShop.DAL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FlowerShop.BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FlowerShop.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

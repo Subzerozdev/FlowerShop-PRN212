@@ -19,3 +19,17 @@ D:\Flower-Shop---PRN212\FlowerShop\FlowerShop\obj\Debug\net8.0-windows\refint\Fl
 D:\Flower-Shop---PRN212\FlowerShop\FlowerShop\obj\Debug\net8.0-windows\FlowerShop.pdb
 D:\Flower-Shop---PRN212\FlowerShop\FlowerShop\obj\Debug\net8.0-windows\FlowerShop.genruntimeconfig.cache
 D:\Flower-Shop---PRN212\FlowerShop\FlowerShop\obj\Debug\net8.0-windows\ref\FlowerShop.dll
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop\bin\Debug\net8.0-windows\FlowerShop.BLL.dll
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop\bin\Debug\net8.0-windows\FlowerShop.DAL.dll
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop\bin\Debug\net8.0-windows\FlowerShop.BLL.pdb
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop\bin\Debug\net8.0-windows\FlowerShop.DAL.pdb
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop\obj\Debug\net8.0-windows\FlowerShop.csproj.AssemblyReference.cache
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop\obj\Debug\net8.0-windows\FlowerShop.csproj.Up2Date
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop\bin\Debug\net8.0-windows\appsettings.json
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop\obj\Debug\net8.0-windows\DetailWindow.g.cs
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop\obj\Debug\net8.0-windows\LoginWindow.g.cs
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop\obj\Debug\net8.0-windows\DetailWindow.baml
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop\obj\Debug\net8.0-windows\LoginWindow.baml
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop\bin\Debug\net8.0-windows\MaterialDesignColors.dll
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop\bin\Debug\net8.0-windows\MaterialDesignThemes.Wpf.dll
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll

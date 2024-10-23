@@ -1,0 +1,16 @@
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.BLL\bin\Debug\net8.0\FlowerShop.BLL.deps.json
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.BLL\bin\Debug\net8.0\FlowerShop.BLL.dll
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.BLL\bin\Debug\net8.0\FlowerShop.BLL.pdb
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.BLL\bin\Debug\net8.0\FlowerShop.DAL.dll
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.BLL\bin\Debug\net8.0\FlowerShop.DAL.pdb
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.BLL\obj\Debug\net8.0\FlowerShop.BLL.csproj.AssemblyReference.cache
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.BLL\obj\Debug\net8.0\FlowerShop.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.BLL\obj\Debug\net8.0\FlowerShop.BLL.AssemblyInfoInputs.cache
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.BLL\obj\Debug\net8.0\FlowerShop.BLL.AssemblyInfo.cs
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.BLL\obj\Debug\net8.0\FlowerShop.BLL.csproj.CoreCompileInputs.cache
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.BLL\obj\Debug\net8.0\FlowerShop.BLL.sourcelink.json
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.BLL\obj\Debug\net8.0\FlowerSh.7D1EC0EA.Up2Date
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.BLL\obj\Debug\net8.0\FlowerShop.BLL.dll
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.BLL\obj\Debug\net8.0\refint\FlowerShop.BLL.dll
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.BLL\obj\Debug\net8.0\FlowerShop.BLL.pdb
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.BLL\obj\Debug\net8.0\ref\FlowerShop.BLL.dll

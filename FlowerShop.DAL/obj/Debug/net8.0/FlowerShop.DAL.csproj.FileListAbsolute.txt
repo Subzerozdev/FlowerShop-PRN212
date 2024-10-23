@@ -1,0 +1,12 @@
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.DAL\bin\Debug\net8.0\FlowerShop.DAL.deps.json
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.DAL\bin\Debug\net8.0\FlowerShop.DAL.dll
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.DAL\bin\Debug\net8.0\FlowerShop.DAL.pdb
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.DAL\obj\Debug\net8.0\FlowerShop.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.DAL\obj\Debug\net8.0\FlowerShop.DAL.AssemblyInfoInputs.cache
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.DAL\obj\Debug\net8.0\FlowerShop.DAL.AssemblyInfo.cs
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.DAL\obj\Debug\net8.0\FlowerShop.DAL.csproj.CoreCompileInputs.cache
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.DAL\obj\Debug\net8.0\FlowerShop.DAL.sourcelink.json
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.DAL\obj\Debug\net8.0\FlowerShop.DAL.dll
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.DAL\obj\Debug\net8.0\refint\FlowerShop.DAL.dll
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.DAL\obj\Debug\net8.0\FlowerShop.DAL.pdb
+D:\Flower-Shop---PRN212\FlowerShop\FlowerShop.DAL\obj\Debug\net8.0\ref\FlowerShop.DAL.dll
