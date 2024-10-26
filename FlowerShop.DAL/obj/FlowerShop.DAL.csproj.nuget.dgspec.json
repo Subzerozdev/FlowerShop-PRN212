@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Flower-Shop---PRN212\\FlowerShop\\FlowerShop.DAL\\FlowerShop.DAL.csproj": {}
+    "C:\\Users\\Nam\\Desktop\\PRN_PRJ\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj": {}
   },
   "projects": {
-    "D:\\Flower-Shop---PRN212\\FlowerShop\\FlowerShop.DAL\\FlowerShop.DAL.csproj": {
+    "C:\\Users\\Nam\\Desktop\\PRN_PRJ\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Flower-Shop---PRN212\\FlowerShop\\FlowerShop.DAL\\FlowerShop.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Nam\\Desktop\\PRN_PRJ\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj",
         "projectName": "FlowerShop.DAL",
-        "projectPath": "D:\\Flower-Shop---PRN212\\FlowerShop\\FlowerShop.DAL\\FlowerShop.DAL.csproj",
-        "packagesPath": "C:\\Users\\2111d\\.nuget\\packages\\",
-        "outputPath": "D:\\Flower-Shop---PRN212\\FlowerShop\\FlowerShop.DAL\\obj\\",
+        "projectPath": "C:\\Users\\Nam\\Desktop\\PRN_PRJ\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj",
+        "packagesPath": "C:\\Users\\Nam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nam\\Desktop\\PRN_PRJ\\FlowerShop-PRN212\\FlowerShop.DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\2111d\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Nam\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,6 +45,36 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
