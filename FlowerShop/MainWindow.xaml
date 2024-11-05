@@ -11,10 +11,10 @@
         <TextBlock HorizontalAlignment="Left" Margin="137,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBox Width="313" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="87,91,0,0" Height="42"  />
         <Label Content="Search" HorizontalAlignment="Left" Margin="24,99,0,0" VerticalAlignment="Top"/>
-        <Button Content="Search" HorizontalAlignment="Left" Margin="430,86,0,0" VerticalAlignment="Top" Height="47" Width="73" Click="Button_Click" Background="#FF2CD91C"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="564,86,0,0" VerticalAlignment="Top" Height="47" Width="73" Click="Button_Click" Background="#FF2CD91C"/>
-        <Button Content="Delete" HorizontalAlignment="Left" Margin="688,86,0,0" VerticalAlignment="Top" Height="47" Width="73" Click="Button_Click" Background="#FF2CD91C"/>
-        <Button Content="Close" HorizontalAlignment="Left" Margin="801,86,0,0" VerticalAlignment="Top" Height="47" Width="73" Click="Button_Click" Background="#FF2CD91C"/>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="430,86,0,0" VerticalAlignment="Top" Height="47" Width="73" Background="#FF2CD91C"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="564,86,0,0" VerticalAlignment="Top" Height="47" Width="73" Background="#FF2CD91C"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="688,86,0,0" VerticalAlignment="Top" Height="47" Width="73" Background="#FF2CD91C"/>
+        <Button Content="Close" HorizontalAlignment="Left" Margin="801,86,0,0" VerticalAlignment="Top" Height="47" Width="73" Background="#FF2CD91C"/>
         <DataGrid  Margin="0,180,0,0"/>
 
     </Grid>

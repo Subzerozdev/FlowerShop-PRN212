@@ -25,8 +25,6 @@ public partial class ExContext : DbContext
 
     public virtual DbSet<Post> Posts { get; set; }
 
-    public virtual DbSet<PostImage> PostImages { get; set; }
-
     public virtual DbSet<Role> Roles { get; set; }
 
     public virtual DbSet<FlowerType> Types { get; set; }
@@ -179,27 +177,6 @@ public partial class ExContext : DbContext
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__posts__user_id__44FF419A");
-        });
-
-        modelBuilder.Entity<PostImage>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("PK__post_ima__3213E83F459E46D9");
-
-            entity.ToTable("post_images");
-
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
-            entity.Property(e => e.ImageUrl)
-                .HasMaxLength(300)
-                .IsUnicode(false)
-                .HasColumnName("image_url");
-            entity.Property(e => e.PostId).HasColumnName("post_id");
-
-            entity.HasOne(d => d.Post).WithMany(p => p.PostImages)
-                .HasForeignKey(d => d.PostId)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("fk_post_images_post_id");
         });
 
         modelBuilder.Entity<Role>(entity =>

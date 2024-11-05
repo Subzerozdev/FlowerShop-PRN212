@@ -29,8 +29,6 @@ public partial class Post
 
     public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
 
-    public virtual ICollection<PostImage> PostImages { get; set; } = new List<PostImage>();
-
     public virtual ICollection<Typeandpost> Typeandposts { get; set; } = new List<Typeandpost>();
 
     public virtual User User { get; set; } = null!;
