@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FlowerShop.DAL
-build_property.ProjectDir = C:\Users\Nam\Desktop\PRN_PRJ\FlowerShop-PRN212\FlowerShop.DAL\
+build_property.ProjectDir = C:\Users\HP\Desktop\FlowerShop-PRN212\FlowerShop.DAL\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

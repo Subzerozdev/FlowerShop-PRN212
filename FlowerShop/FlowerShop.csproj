@@ -25,4 +25,8 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="resource\" />
+  </ItemGroup>
+
 </Project>
