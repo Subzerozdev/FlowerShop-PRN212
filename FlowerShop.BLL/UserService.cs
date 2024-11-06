@@ -21,5 +21,10 @@ namespace FlowerShop.BLL
         {
             return _userRepo.CreateUser(user);
         }
+        public User GetUser(int userId) => _userRepo.GetUserById(userId);
+        public List<User> GetAllUsers() => _userRepo.GetAllUsers();
+        public void add(User user) => _userRepo.AddUser(user);
+        public bool update(User user) => _userRepo.UpdateUser(user);
+        public bool delete(int userId) => _userRepo.DeleteUser(userId);
     }
 }

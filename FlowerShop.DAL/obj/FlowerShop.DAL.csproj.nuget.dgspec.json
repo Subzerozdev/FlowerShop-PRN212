@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\ASSIGNMENT_PRN212\\AssignmentPRN4\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj": {}
+    "C:\\Users\\dessm\\OneDrive\\Documentos\\GitHub\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj": {}
   },
   "projects": {
-    "F:\\ASSIGNMENT_PRN212\\AssignmentPRN4\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj": {
+    "C:\\Users\\dessm\\OneDrive\\Documentos\\GitHub\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\ASSIGNMENT_PRN212\\AssignmentPRN4\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\dessm\\OneDrive\\Documentos\\GitHub\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj",
         "projectName": "FlowerShop.DAL",
-        "projectPath": "F:\\ASSIGNMENT_PRN212\\AssignmentPRN4\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "F:\\ASSIGNMENT_PRN212\\AssignmentPRN4\\FlowerShop-PRN212\\FlowerShop.DAL\\obj\\",
+        "projectPath": "C:\\Users\\dessm\\OneDrive\\Documentos\\GitHub\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj",
+        "packagesPath": "C:\\Users\\dessm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dessm\\OneDrive\\Documentos\\GitHub\\FlowerShop-PRN212\\FlowerShop.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dessm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
