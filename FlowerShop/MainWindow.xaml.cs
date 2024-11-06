@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using FlowerShop.BLL;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -20,37 +21,40 @@ namespace FlowerShop
         {
             InitializeComponent();
         }
-
+        private PostService PostService = new();
+        public void FillDataGrid()
+        {
+            PostFlowerDataGrid.ItemsSource = null;
+            PostFlowerDataGrid.ItemsSource =  PostService.GetAllPosts();
+        }
        
 
-        private void BtnSearch(object sender, RoutedEventArgs e)
+        
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            FillDataGrid();
+
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void BtnAdd(object sender, RoutedEventArgs e)
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void BtnDelete(object sender, RoutedEventArgs e)// xóa sản phẩm
+        private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void BtnClose(object sender, RoutedEventArgs e)
-        {
-            this.Close();// đóng trang 
-        }
-
-        private void txtSearch_TextChanged(object sender, TextChangedEventArgs e)
+        private void btnClose_Click(object sender, RoutedEventArgs e)
         {
 
-        }
-
-        private void dtgSearch_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
+            this.Close();
         }
     }
 }
