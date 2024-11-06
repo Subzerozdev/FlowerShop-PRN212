@@ -6,7 +6,18 @@
         xmlns:local="clr-namespace:FlowerShop"
          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="1080" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+        Title="MainWindow" Height="600" Width="1080" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="LightYellow">
+    <Grid>
+        <Image Source="resource/Flower.jpg" Margin="-4,0,847,506" />
+        <TextBlock HorizontalAlignment="Left" Margin="137,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSearch" Width="313" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="101,146,0,0" Height="42"  />
+        <Label Content="Search" HorizontalAlignment="Left" Margin="33,149,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="440,141,0,0" VerticalAlignment="Top" Height="47" Width="73" Click="Button_Click" Background="#FF2CD91C"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="570,144,0,0" VerticalAlignment="Top" Height="46" Width="73" Click="Button_Click" Background="#FF2CD91C"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="690,141,0,0" VerticalAlignment="Top" Height="47" Width="73" Click="Button_Click" Background="#FF2CD91C"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="809,139,0,0" VerticalAlignment="Top" Height="47" Width="73" Click="Button_Click" Background="#FF2CD91C"/>
+        <DataGrid x:Name="dtgSearch"  Margin="0,300,0,0"/>
 
-   
+    </Grid>
+
 </Window>
