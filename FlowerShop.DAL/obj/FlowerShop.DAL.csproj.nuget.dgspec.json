@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\source\\repos\\Subzerozdev\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj": {}
+    "C:\\Users\\HP\\Source\\Repos\\Subzerozdev\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\source\\repos\\Subzerozdev\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj": {
+    "C:\\Users\\HP\\Source\\Repos\\Subzerozdev\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\Subzerozdev\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\Subzerozdev\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj",
         "projectName": "FlowerShop.DAL",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\Subzerozdev\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj",
+        "projectPath": "C:\\Users\\HP\\Source\\Repos\\Subzerozdev\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\Subzerozdev\\FlowerShop-PRN212\\FlowerShop.DAL\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Source\\Repos\\Subzerozdev\\FlowerShop-PRN212\\FlowerShop.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

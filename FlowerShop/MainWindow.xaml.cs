@@ -33,14 +33,14 @@ namespace FlowerShop
 
         }
 
-        private void BtnDelete(object sender, RoutedEventArgs e)
+        private void BtnDelete(object sender, RoutedEventArgs e)// xóa sản phẩm
         {
 
         }
 
         private void BtnClose(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            this.Close();// đóng trang 
         }
 
         private void txtSearch_TextChanged(object sender, TextChangedEventArgs e)

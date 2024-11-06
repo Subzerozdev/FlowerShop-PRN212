@@ -3365,9 +3365,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\source\\repos\\Subzerozdev\\FlowerShop-PRN212\\FlowerShop\\FlowerShop.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\Subzerozdev\\FlowerShop-PRN212\\FlowerShop\\FlowerShop.csproj",
       "projectName": "FlowerShop",
-      "projectPath": "C:\\Users\\HP\\source\\repos\\Subzerozdev\\FlowerShop-PRN212\\FlowerShop\\FlowerShop.csproj",
+      "projectPath": "C:\\Users\\HP\\Source\\Repos\\Subzerozdev\\FlowerShop-PRN212\\FlowerShop\\FlowerShop.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\HP\\source\\repos\\Subzerozdev\\FlowerShop-PRN212\\FlowerShop\\obj\\",
       "projectStyle": "PackageReference",
@@ -3391,8 +3391,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\HP\\source\\repos\\Subzerozdev\\FlowerShop-PRN212\\FlowerShop.BLL\\FlowerShop.BLL.csproj": {
-              "projectPath": "C:\\Users\\HP\\source\\repos\\Subzerozdev\\FlowerShop-PRN212\\FlowerShop.BLL\\FlowerShop.BLL.csproj"
+            "C:\\Users\\HP\\Source\\Repos\\Subzerozdev\\FlowerShop-PRN212\\FlowerShop.BLL\\FlowerShop.BLL.csproj": {
+              "projectPath": "C:\\Users\\HP\\Source\\Repos\\Subzerozdev\\FlowerShop-PRN212\\FlowerShop.BLL\\FlowerShop.BLL.csproj"
             }
           }
         }
