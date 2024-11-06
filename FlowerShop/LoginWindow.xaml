@@ -50,13 +50,13 @@
                 <TextBlock Text="Sign in to App" Foreground="#3AB19B" Style="{StaticResource TitleText}" />
                 <StackPanel Orientation="Horizontal" Margin="0 20" HorizontalAlignment="Center">
                     <Button Style="{StaticResource buttonCircle}">
-                        <Image Source="resource/google.png" Width="20" Height="20" />
+                        <Image Source="C:\Users\HP\source\repos\Subzerozdev\FlowerShop-PRN212\FlowerShop\resource\google.png" Width="20" Height="20" />
                     </Button>
                     <Button Style="{StaticResource buttonCircle}">
-                        <Image Source="resource/facebook.png" Width="20" Height="20" />
+                        <Image Source="C:\Users\HP\source\repos\Subzerozdev\FlowerShop-PRN212\FlowerShop\resource\facebook.png" Width="20" Height="20" />
                     </Button>
                     <Button Style="{StaticResource buttonCircle}">
-                        <Image Source="resource/linkedin.png" Width="20" Height="20" />
+                        <Image Source="C:\Users\HP\source\repos\Subzerozdev\FlowerShop-PRN212\FlowerShop\resource\linkedin.png" Width="20" Height="20" />
                     </Button>
                 </StackPanel>
 

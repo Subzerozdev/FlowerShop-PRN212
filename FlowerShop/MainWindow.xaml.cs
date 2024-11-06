@@ -21,6 +21,36 @@ namespace FlowerShop
             InitializeComponent();
         }
 
-        
+       
+
+        private void BtnSearch(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnAdd(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnDelete(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnClose(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txtSearch_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void dtgSearch_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
