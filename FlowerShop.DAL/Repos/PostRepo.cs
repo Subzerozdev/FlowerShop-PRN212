@@ -9,10 +9,10 @@ namespace FlowerShop.DAL.Repos
 {
     public class PostRepo
     {
-        private static ExContext _context;
+        private EventflowerexchangeContext _context;
         public PostRepo()
         {
-            _context = new ExContext();
+            _context = new EventflowerexchangeContext();
         }
         public List<Post> GetAllPosts()
         {

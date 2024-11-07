@@ -23,13 +23,13 @@ public partial class Post
 
     public int UserId { get; set; }
 
+    public int? Status { get; set; }
+
     public int? CategoryId { get; set; }
 
-    public virtual Eventcategory? Category { get; set; }
+    public virtual EventCategory? Category { get; set; }
 
     public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
-
-    public virtual ICollection<Typeandpost> Typeandposts { get; set; } = new List<Typeandpost>();
 
     public virtual User User { get; set; } = null!;
 }

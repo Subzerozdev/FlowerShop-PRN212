@@ -10,11 +10,11 @@ namespace FlowerShop.DAL.Repos
 {
     public class OrderRepo
     {
-        private static ExContext _context;
+        private EventflowerexchangeContext _context;
 
         public OrderRepo()
         {
-            _context = new ExContext();
+            _context = new EventflowerexchangeContext();
         }
         public void CreateOrder(Order order, List<OrderDetail> orderDetails)
         {

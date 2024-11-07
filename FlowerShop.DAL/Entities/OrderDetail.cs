@@ -5,9 +5,7 @@ namespace FlowerShop.DAL.Entities;
 
 public partial class OrderDetail
 {
-    public int Id { get; set; }
-
-    public int? NumberOfProducts { get; set; }
+    public long Id { get; set; }
 
     public double? TotalMoney { get; set; }
 

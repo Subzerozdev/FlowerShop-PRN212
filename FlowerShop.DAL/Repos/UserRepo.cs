@@ -9,10 +9,10 @@ namespace FlowerShop.DAL.Repos
 {
     public class UserRepo
     {
-        private static ExContext _context;
+        private EventflowerexchangeContext _context;
         public UserRepo()
         {
-            _context = new ExContext();
+            _context = new EventflowerexchangeContext();
         }
         public User? GetUserByUsernameAndPassword(string username, string password)
         {
@@ -30,7 +30,7 @@ namespace FlowerShop.DAL.Repos
             if (userExisted == null)
             {
                 user.IsActive = true;
-                user.CreatedAt = DateTime.Now;
+                user.CreateAt = DateTime.Now;
                 user.RoleId = 1;
                 _context.Users.Add(user);
                 _context.SaveChanges();
@@ -53,9 +53,9 @@ namespace FlowerShop.DAL.Repos
             User? userExisted = _context.Users.FirstOrDefault(u => u.Username.Equals(user.Id));
             if (userExisted != null)
             {
-                DateTime dateTime = (DateTime)userExisted.CreatedAt;
+                DateTime dateTime = (DateTime)userExisted.CreateAt;
                 _context.Entry(userExisted).CurrentValues.SetValues(user);
-                userExisted.CreatedAt = dateTime;
+                userExisted.CreateAt = dateTime;
                 _context.SaveChanges();
                 result = true;
             }

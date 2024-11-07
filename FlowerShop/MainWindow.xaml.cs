@@ -22,17 +22,10 @@ namespace FlowerShop
             InitializeComponent();
         }
         private PostService PostService = new();
-        public void FillDataGrid()
-        {
-            PostFlowerDataGrid.ItemsSource = null;
-            PostFlowerDataGrid.ItemsSource =  PostService.GetAllPosts();
-        }
-       
 
         
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            FillDataGrid();
 
         }
 
@@ -54,6 +47,21 @@ namespace FlowerShop
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
 
+            this.Close();
+        }
+
+        private void btnOrder_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void btnLogOut_Click(object sender, RoutedEventArgs e)
+        {
             this.Close();
         }
     }

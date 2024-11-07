@@ -61,10 +61,10 @@ namespace FlowerShop
             order.FullName = txtFullName.Text.Trim();
             order.Address = address;
             order.Email = email;
-            order.PhoneNumber = phone;
+            order.Phone = phone;
             order.Note = txtNote.Text.Trim();
-            order.PaymentMethod = payment;
-            //order.TotalMoney = float.Parse(txtTotalMoney.Text);
+            //order.Pa = payment;
+            order.TotalMoney = float.Parse(txtTotalMoney.Text);
             //orderService.AddOrder(order);
 
         }

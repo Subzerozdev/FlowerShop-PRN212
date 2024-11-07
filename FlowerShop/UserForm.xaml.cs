@@ -54,9 +54,9 @@ namespace FlowerShop
             User.FullName = txtFullName.Text;
             User.Phone = txtPhone.Text;
             User.Address = txtAddress.Text;
-            User.RoleId = int.TryParse(txtRoleId.Text, out int roleId) ? roleId : (int?)null;
+            User.RoleId = 2;
             User.IsActive = chkIsActive.IsChecked ?? false;
-            User.CreatedAt = DateTime.Now;
+            User.CreateAt = DateTime.Now;
             DialogResult = true;  // Indicate that the dialog was successful
             Close();
         }

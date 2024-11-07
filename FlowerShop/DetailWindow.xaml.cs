@@ -1,5 +1,4 @@
-﻿using FlowerShop.BLL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,7 +23,6 @@ namespace FlowerShop
         {
             InitializeComponent();
         }
-        private PostService postService = new();
 
 
     }

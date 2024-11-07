@@ -12,15 +12,15 @@ namespace FlowerShop.BLL
     {
         private static EventRepo _eventRepo = new();
 
-        public List<Eventcategory> GetEventRepo()
+        public List<EventCategory> GetEventRepo()
         {
             return _eventRepo.GetEventcategories();
         }
-        public Eventcategory? GetEventCategory(int id)
+        public EventCategory? GetEventCategory(int id)
         {
             return _eventRepo.GetEventcategory(id);
         }
-        public void AddEventCategory(Eventcategory category)
+        public void AddEventCategory(EventCategory category)
         {
             _eventRepo.AddEventcategory(category);
         }
@@ -28,7 +28,7 @@ namespace FlowerShop.BLL
         {
             _eventRepo.RemoveEventcategory(id);
         }
-        public bool UpdateEventCategory(Eventcategory category)
+        public bool UpdateEventCategory(EventCategory category)
         {
             return _eventRepo.UpdateEventcategory(category);
         }

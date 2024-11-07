@@ -9,40 +9,41 @@ namespace FlowerShop.DAL.Repos
 {
     public class EventRepo
     {
-        private static ExContext _context;
+        private EventflowerexchangeContext _context;
         public EventRepo()
         {
-            _context = new ExContext();
+            _context = new EventflowerexchangeContext();
         }
-        public List<Eventcategory> GetEventcategories()
+        public List<EventCategory> GetEventcategories()
         {
-            return _context.Eventcategories.ToList();
+            return _context.EventCategories.ToList();
         }
-        public Eventcategory? GetEventcategory(int id)
+        public EventCategory? GetEventcategory(int id)
         {
-            return _context.Eventcategories.FirstOrDefault(e => e.Id.Equals(id));
+            return _context.EventCategories.FirstOrDefault(e => e.Id.Equals(id));
         }
-        public void AddEventcategory(Eventcategory eventcategory)
+        public void AddEventcategory(EventCategory eventcategory)
         {
-            _context.Eventcategories.Add(eventcategory);
+            _context.EventCategories.Add(eventcategory);
             _context.SaveChanges();
         }
         public bool RemoveEventcategory(int id)
         {
             bool result = false;
-            Eventcategory? eventcategory = GetEventcategory(id);
+            EventCategory? eventcategory = GetEventcategory(id);
             if (eventcategory != null)
             {
-                _context?.Eventcategories.Remove(eventcategory);
+                _context?.EventCategories.Remove(eventcategory);
                 result = true;
             }
             return result;
         }
-        public bool UpdateEventcategory(Eventcategory eventcategory)
+        public bool UpdateEventcategory(EventCategory eventcategory)
         {
             bool result = false;
-            Eventcategory? eventcategoryExisted = GetEventcategory(eventcategory.Id);
-            if (eventcategoryExisted != null) { 
+            EventCategory? eventcategoryExisted = GetEventcategory(eventcategory.Id);
+            if (eventcategoryExisted != null)
+            {
                 eventcategoryExisted.Name = eventcategory.Name;
                 _context.SaveChanges();
                 result = true;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace FlowerShop.DAL.Entities;
 
-public partial class Eventcategory
+public partial class EventCategory
 {
     public int Id { get; set; }
 

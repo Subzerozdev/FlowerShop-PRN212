@@ -17,11 +17,11 @@ public partial class User
 
     public string? Address { get; set; }
 
-    public DateTime? CreatedAt { get; set; }
+    public DateTime? CreateAt { get; set; }
 
     public bool? IsActive { get; set; }
 
-    public int? RoleId { get; set; }
+    public byte? RoleId { get; set; }
 
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 
