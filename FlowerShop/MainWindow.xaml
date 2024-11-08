@@ -24,7 +24,35 @@
                 <Button Uid="6" Width="150" Content="ERROR" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White"/>
             </StackPanel>
         </Grid>
+        <Grid Height="508">
+            <DataGrid x:Name="PostFlowerDataGrid" HorizontalAlignment="Left" Height="440" Width="762" AutoGenerateColumns="False" TabIndex="7" 
+                      Style="{StaticResource DataGridStyle}" Margin="0,68,0,0" VerticalAlignment="Top">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Id" Width="50"  Binding="{Binding Id}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                    <DataGridTextColumn Header="Name" Width="100" Binding="{Binding Name}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                    <DataGridTextColumn Header="Thumbnail" Width="150"  Binding="{Binding Thumbnail}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                    <DataGridTextColumn Header="StartDate" Width="80" Binding="{Binding StartDate}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                    <DataGridTextColumn Header="EndDate" Width="80" Binding="{Binding EndDate}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                    <DataGridTextColumn Header="Price" Width="80" Binding="{Binding Price}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                    <DataGridTextColumn Header="Category" Width="80" Binding="{Binding Category.Name}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                    <DataGridTextColumn Header="Address" Width="160"  Binding="{Binding Address}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                    <DataGridTextColumn Header="Description" Width="300"  Binding="{Binding Description}" ElementStyle="{StaticResource TextBlockStyle}"/>
 
+                </DataGrid.Columns>
+            </DataGrid>
+            <Grid Margin="762,0,0,0">
+                <Button x:Name="btnAddToCart" Content="Add to Cart" Style="{StaticResource mainButton}" Margin="0,72,0,379" HorizontalAlignment="Center" Width="182" Click="btnAddToCart_Click"/>
+                <Button x:Name="btnOrder1" Content="Place Order" Style="{StaticResource mainButton}" Margin="0,424,0,27" HorizontalAlignment="Center" Width="182" Click="btnOrder_Click" />
+                <DataGrid x:Name="dgOrderDetail" Style="{StaticResource DataGridStyle}" Margin="0,157,0,121" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Num" Width="50" Binding="{Binding Id}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                        <DataGridTextColumn Header="Post" Width="160" Binding="{Binding Post.Name}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                        <DataGridTextColumn Header="Price" Width="110"  Binding="{Binding TotalMoney}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+
+        </Grid>
     </StackPanel>
 
 </Window>

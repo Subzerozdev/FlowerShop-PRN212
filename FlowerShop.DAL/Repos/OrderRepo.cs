@@ -16,18 +16,23 @@ namespace FlowerShop.DAL.Repos
         {
             _context = new EventflowerexchangeContext();
         }
-        public void CreateOrder(Order order, List<OrderDetail> orderDetails)
+        public bool CreateOrder(Order order, List<OrderDetail> orderDetails)
         {
+            int newOrderId = _context.Orders.OrderByDescending(o => o.Id).FirstOrDefault().Id+1;
+            order.Id = newOrderId;
             _context.Orders.Add(order);
             _context.SaveChanges();
             foreach (var detail in orderDetails)
             {
+                long newOrderDetailId = _context.OrderDetails.OrderByDescending(o => o.Id).FirstOrDefault().Id + 1;
+                detail.Id = newOrderDetailId;
                 detail.OrderId = order.Id;
-                _context.OrderDetails.Add(detail);
             }
+            _context.OrderDetails.AddRange(orderDetails);
             _context.SaveChanges();
+            return true;
         }
-        public Order GetOrderById(int id)
+        public Order? GetOrderById(int id)
         {
             return _context.Orders.Include(o => o.OrderDetails).FirstOrDefault(o => o.Id == id);
         }

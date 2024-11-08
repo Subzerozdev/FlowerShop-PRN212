@@ -23,7 +23,7 @@ namespace FlowerShop
     public partial class OrderWindow : Window
     {
         private OrderService orderService = new();
-
+        public List<OrderDetail>? Details { get; set; }
         public OrderWindow()
         {
             InitializeComponent();
@@ -33,7 +33,8 @@ namespace FlowerShop
         {
             // Email, Address, Phone and Payment must not be null or invalid
             string email = txtEmail.Text.Trim();
-            if (IsStringValueValid(email)) {
+            if (IsStringValueValid(email))
+            {
                 NotValidErrorMessage("Email");
                 return;
             }
@@ -63,9 +64,18 @@ namespace FlowerShop
             order.Email = email;
             order.Phone = phone;
             order.Note = txtNote.Text.Trim();
-            //order.Pa = payment;
+            order.PaymentMethod = payment;
             order.TotalMoney = float.Parse(txtTotalMoney.Text);
-            //orderService.AddOrder(order);
+            bool result = orderService.AddOrder(order, Details);
+            if (result)
+            {
+                SuccessMessage("Order");
+                this.Hide();
+            }
+            else
+            {
+                ErrorMessage();
+            }
 
         }
 
@@ -100,12 +110,33 @@ namespace FlowerShop
 
         private void NotValidErrorMessage(string value)
         {
-            MessageBox.Show(value +" is not valid!", "Field Validation", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show(value + " is not valid!", "Field Validation", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void SuccessMessage(string value)
+        {
+            MessageBox.Show(value + " is successful", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void ErrorMessage()
+        {
+            MessageBox.Show("Something is wrong", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            FillData();
+        }
 
+        private void FillData()
+        {
+            double? total = 0;
+            foreach (var detail in Details)
+            {
+                total += detail.TotalMoney; 
+
+            }
+            txtTotalMoney.Text = total.ToString();
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)

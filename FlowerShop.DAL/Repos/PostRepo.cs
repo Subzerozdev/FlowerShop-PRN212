@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FlowerShop.DAL.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace FlowerShop.DAL.Repos
 {
@@ -16,7 +17,7 @@ namespace FlowerShop.DAL.Repos
         }
         public List<Post> GetAllPosts()
         {
-            return _context.Posts.ToList();
+            return _context.Posts.Include("Category").ToList();
         }
         public Post? GetPostById(int id)
         {

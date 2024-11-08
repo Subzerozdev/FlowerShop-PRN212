@@ -147,7 +147,23 @@
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
         </Style>
-
+        <!-- DataGrid Style -->
+        <Style x:Key="DataGridStyle" TargetType="DataGrid">
+            <Setter Property="Padding" Value="0,0,2,2"/>
+            <Setter Property="Foreground" Value="DimGray"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="GridLinesVisibility" Value="All"/>
+            <Setter Property="RowHeight" Value="50"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="HorizontalGridLinesBrush" Value="LightGray"/>
+            <Setter Property="VerticalGridLinesBrush" Value="LightGray"/>
+        </Style>
+        <!-- TextBlock Style -->
+        <Style x:Key="TextBlockStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="DimGray"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
 
     </Application.Resources>
 
