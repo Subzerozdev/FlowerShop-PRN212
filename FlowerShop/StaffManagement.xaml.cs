@@ -22,12 +22,11 @@ namespace FlowerShop
     /// </summary>
     public partial class StaffManagement : Window
     {
-        private readonly UserService _userService;
+        private readonly UserService _userService = new();
 
         public StaffManagement()
         {
             InitializeComponent();
-            _userService = new UserService();
             LoadUserData();
         }
 

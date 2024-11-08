@@ -50,12 +50,13 @@ namespace FlowerShop.DAL.Repos
         public bool UpdateUser(User user)
         {
             bool result = false;
-            User? userExisted = _context.Users.FirstOrDefault(u => u.Username.Equals(user.Id));
+            User? userExisted = _context.Users.FirstOrDefault(u => u.Id.Equals(user.Id));
             if (userExisted != null)
             {
+                _context = new();
                 DateTime dateTime = (DateTime)userExisted.CreateAt;
-                _context.Entry(userExisted).CurrentValues.SetValues(user);
-                userExisted.CreateAt = dateTime;
+                _context.Users.Update(user);
+                user.CreateAt = dateTime;
                 _context.SaveChanges();
                 result = true;
             }
@@ -64,9 +65,10 @@ namespace FlowerShop.DAL.Repos
         public bool DeleteUser(int userId)
         {
             bool result = false;
-            User? userExisted = _context.Users.FirstOrDefault(u => u.Username.Equals(userId));
+            User? userExisted = _context.Users.FirstOrDefault(u => u.Id.Equals(userId));
             if (userExisted != null)
             {
+                _context = new();
                 _context.Users.Remove(userExisted);
                 _context.SaveChanges();
                 result = true;

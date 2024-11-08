@@ -21,14 +21,19 @@ namespace FlowerShop
     /// </summary>
     public partial class UserForm : Window
     {
+        private UserService _userService = new();
         public User User { get; private set; }
 
         public UserForm(User? user = null)
         {
             InitializeComponent();
-            User = user ?? new User(); // Create a new User if no user is provided.
-
-            // If in edit mode, load data
+            User = user ?? new User();
+            if (user == null)
+            {
+                int maxId = _userService.GetAllUsers().Max(x => x.Id);
+                int setId = maxId + 1;
+                User.Id = setId;
+            }
             if (user != null)
             {
                 LoadUserData(user);
@@ -48,7 +53,6 @@ namespace FlowerShop
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-            // Save the input data into the User object
             User.Username = txtUsername.Text;
             User.Password = txtPassword.Password;
             User.FullName = txtFullName.Text;
@@ -57,14 +61,14 @@ namespace FlowerShop
             User.RoleId = 2;
             User.IsActive = chkIsActive.IsChecked ?? false;
             User.CreateAt = DateTime.Now;
-            DialogResult = true;  // Indicate that the dialog was successful
-            Close();
+            DialogResult = true;
+            this.Close();
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
-            DialogResult = false;  // Indicate that the dialog was canceled
-            Close();
+            DialogResult = false;
+            this.Close();
         }
     }
 

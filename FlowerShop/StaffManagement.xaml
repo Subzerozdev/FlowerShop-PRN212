@@ -16,7 +16,7 @@
                 <DataGridTextColumn Header="Address" Binding="{Binding Address}" Width="150"/>
                 <DataGridCheckBoxColumn Header="IsActive" Binding="{Binding IsActive}" Width="80"/>
                 <DataGridTextColumn Header="Role ID" Binding="{Binding RoleId}" Width="80"/>
-                <DataGridTextColumn Header="Created At" Binding="{Binding CreatedAt}" Width="150"/>
+                <DataGridTextColumn Header="Created At" Binding="{Binding CreateAt, StringFormat=\{0:yyyy-MM-dd HH:mm:ss\}, TargetNullValue='N/A'}" Width="150"/>
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">

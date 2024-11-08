@@ -3221,23 +3221,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\2111d\\.nuget\\packages\\": {},
+    "C:\\Users\\dessm\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FlowerShop-PRN212\\FlowerShop\\FlowerShop.csproj",
+      "projectUniqueName": "C:\\Users\\dessm\\OneDrive\\Documentos\\GitHub\\FlowerShop-PRN212\\FlowerShop\\FlowerShop.csproj",
       "projectName": "FlowerShop",
-      "projectPath": "D:\\FlowerShop-PRN212\\FlowerShop\\FlowerShop.csproj",
-      "packagesPath": "C:\\Users\\2111d\\.nuget\\packages\\",
-      "outputPath": "D:\\FlowerShop-PRN212\\FlowerShop\\obj\\",
+      "projectPath": "C:\\Users\\dessm\\OneDrive\\Documentos\\GitHub\\FlowerShop-PRN212\\FlowerShop\\FlowerShop.csproj",
+      "packagesPath": "C:\\Users\\dessm\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dessm\\OneDrive\\Documentos\\GitHub\\FlowerShop-PRN212\\FlowerShop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\2111d\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dessm\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3253,8 +3253,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\FlowerShop-PRN212\\FlowerShop.BLL\\FlowerShop.BLL.csproj": {
-              "projectPath": "D:\\FlowerShop-PRN212\\FlowerShop.BLL\\FlowerShop.BLL.csproj"
+            "C:\\Users\\dessm\\OneDrive\\Documentos\\GitHub\\FlowerShop-PRN212\\FlowerShop.BLL\\FlowerShop.BLL.csproj": {
+              "projectPath": "C:\\Users\\dessm\\OneDrive\\Documentos\\GitHub\\FlowerShop-PRN212\\FlowerShop.BLL\\FlowerShop.BLL.csproj"
             }
           }
         }
@@ -3292,7 +3292,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
