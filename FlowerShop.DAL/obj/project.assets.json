@@ -4344,19 +4344,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nam\\.nuget\\packages\\": {}
+    "C:\\Users\\2111d\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nam\\Desktop\\PRN_Assignment\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj",
+      "projectUniqueName": "D:\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj",
       "projectName": "FlowerShop.DAL",
-      "projectPath": "C:\\Users\\Nam\\Desktop\\PRN_Assignment\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj",
-      "packagesPath": "C:\\Users\\Nam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nam\\Desktop\\PRN_Assignment\\FlowerShop-PRN212\\FlowerShop.DAL\\obj\\",
+      "projectPath": "D:\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj",
+      "packagesPath": "C:\\Users\\2111d\\.nuget\\packages\\",
+      "outputPath": "D:\\FlowerShop-PRN212\\FlowerShop.DAL\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Nam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\2111d\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

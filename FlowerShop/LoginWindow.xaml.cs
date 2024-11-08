@@ -1,4 +1,7 @@
-﻿using System;
+﻿using FlowerShop.BLL;
+using FlowerShop.DAL.Entities;
+using Microsoft.IdentityModel.Tokens;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,59 +22,32 @@ namespace FlowerShop
     /// </summary>
     public partial class LoginWindow : Window
     {
+
+        private UserService _service = new();
         public LoginWindow()
         {
             InitializeComponent();
         }
 
-        private void btnExit_Click(object sender, RoutedEventArgs e)
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
-        }
-
-        private void Border_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-            if (e.ChangedButton == MouseButton.Left)
-                this.DragMove();
-        }
-
-        private void Image_MouseUp(object sender, MouseButtonEventArgs e)
-        {
-            Application.Current.Shutdown();
-        }
-
-        private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
-        {
-            if (!string.IsNullOrEmpty(passwordBox.Password) && passwordBox.Password.Length > 0)
-                textPassword.Visibility = Visibility.Collapsed;
-            else
-                textPassword.Visibility = Visibility.Visible;
-        }
-
-        private void textPassword_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            passwordBox.Focus();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            if (!string.IsNullOrEmpty(txtEmail.Text) && !string.IsNullOrEmpty(passwordBox.Password))
+            if (UsernameTextBox.Text.IsNullOrEmpty() || PasswordTextBox.Text.IsNullOrEmpty())
             {
-                MessageBox.Show("Successfully Signed In");
+                MessageBox.Show(" Both Email address and password are required ", "Required fields", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
-        }
+           User ? account = _service.login(UsernameTextBox.Text, PasswordTextBox.Text);
 
-        private void txtEmail_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
-        {
-            if (!string.IsNullOrEmpty(txtEmail.Text) && txtEmail.Text.Length > 0)
-                textEmail.Visibility = Visibility.Collapsed;
-            else
-                textEmail.Visibility = Visibility.Visible;
-        }
+            if (account == null)
+            {
+                MessageBox.Show("Invalid email address or wrong password", "Wrong credentials", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
 
-        private void textEmail_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            txtEmail.Focus();
+            MainWindow m = new();
+            m.CurrentAccount = account;
+            m.Show();
+            this.Hide();
         }
     }
 }
