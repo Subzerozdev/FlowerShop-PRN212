@@ -1,0 +1,69 @@
+﻿<Window x:Class="FlowerShop.PostManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Post Management" Height="600" Width="1080" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="#FFF9F4E6" FontFamily="Segoe UI" FontSize="14" Loaded="Window_Loaded">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header with Background Color and Shadow -->
+        <Border Background="#FFD7C4A8" CornerRadius="10" Padding="10" Margin="10" Effect="{DynamicResource DropShadow}">
+            <TextBlock Text="Post Management" FontSize="30" FontWeight="Bold" Foreground="#FF573D1B" HorizontalAlignment="Center"/>
+        </Border>
+
+        <!-- DataGrid and Controls -->
+        <Grid Grid.Row="1" Margin="0,73,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="250" />
+            </Grid.ColumnDefinitions>
+
+            <!-- DataGrid for Post List with Border and Shadow -->
+            <Border Background="White" CornerRadius="10" Margin="0,0,10,0" Effect="{DynamicResource DropShadow}" Padding="5">
+                <DataGrid x:Name="PostsDataGrid" AutoGenerateColumns="False"
+                          Background="White" AlternatingRowBackground="#FFF7E5D7" RowBackground="White" Foreground="Black"
+                          VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" BorderBrush="#FFB5651D"
+                          FontSize="13">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                        <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="50"/>
+                        <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="120"/>
+                        <DataGridTextColumn Header="Address" Binding="{Binding Address}" Width="100"/>
+                        <DataGridTextColumn Header="Start Date" Binding="{Binding StartDate}" Width="100"/>
+                        <DataGridTextColumn Header="End Date" Binding="{Binding EndDate}" Width="100"/>
+                        <DataGridTextColumn Header="Price" Binding="{Binding Price}" Width="80"/>
+                        <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="80"/>
+                        <DataGridTextColumn Header="Category" Binding="{Binding Category.Name}" Width="150"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
+
+            <!-- Control Buttons with Rounded Corners and Shadows -->
+            <StackPanel Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,0,10,0">
+                <Button x:Name="Create_Button" Content="Create" Width="200" Height="45" Background="#FF6B4226" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" Margin="0,0,0,10" BorderThickness="0" Click="Create_Button_Click" />
+                <Button x:Name="Update_Button" Content="Update" Width="200" Height="45" Background="#FF6B4226" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" Margin="0,0,0,10" BorderThickness="0" Click="Update_Button_Click" />
+                <Button x:Name="Delete_Button" Content="Delete" Width="200" Height="45" Background="#FFB22222" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" Margin="0,0,0,10" BorderThickness="0" Click="Delete_Button_Click" />
+                <Button x:Name="Quit_Button" Content="Quit" Width="200" Height="45" Background="#FF555555" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" Margin="0,0,0,10" BorderThickness="0" Click="Quit_Button_Click" />
+            </StackPanel>
+        </Grid>
+
+        <!-- Search Section with Shadows -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,23,0,0" Grid.Row="1">
+            <Button Content="Search" Width="100" Height="35" Background="#FF6B4226" Foreground="White" FontWeight="Bold" Padding="5" Margin="5" BorderThickness="0" />
+            <TextBox Width="150" Height="35" Margin="10,0,0,0" VerticalAlignment="Center" FontSize="13" Padding="5" Background="#FFF7EDE4" BorderBrush="#FFB5651D" BorderThickness="1"/>
+            <Label Content="Description:" FontSize="15" VerticalAlignment="Center" Margin="20,0,0,0"/>
+            <TextBox Width="200" Height="35" Margin="10,0,0,0" VerticalAlignment="Center" FontSize="13" Padding="5" Background="#FFF7EDE4" BorderBrush="#FFB5651D" BorderThickness="1"/>
+        </StackPanel>
+    </Grid>
+
+    <!-- Shadow Effect Resource -->
+    <Window.Resources>
+        <DropShadowEffect x:Key="DropShadow" ShadowDepth="5" Direction="270" BlurRadius="10" Opacity="0.3"/>
+    </Window.Resources>
+</Window>

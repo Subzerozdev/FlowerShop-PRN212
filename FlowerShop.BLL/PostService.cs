@@ -27,9 +27,9 @@ namespace FlowerShop.BLL
         {
             return _repo.UpdatePost(post);
         }
-        public bool DeletePost(int postId)
+        public void DeletePost(Post post)
         {
-            return _repo.DeletePost(postId);
+            _repo.DeletePost(post);
         }
     }
 }

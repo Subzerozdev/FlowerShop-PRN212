@@ -19,6 +19,9 @@
     <Compile Update="OrderWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="PostManagement.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="StaffManagement.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -40,6 +43,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="OrderWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PostManagement.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="StaffManagement.xaml">

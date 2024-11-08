@@ -17,6 +17,7 @@ namespace FlowerShop.DAL.Repos
         }
         public List<Post> GetAllPosts()
         {
+            _context = new EventflowerexchangeContext();
             return _context.Posts.Include("Category").ToList();
         }
         public Post? GetPostById(int id)
@@ -46,17 +47,21 @@ namespace FlowerShop.DAL.Repos
             }
             return result;
         }
-        public bool DeletePost(int id)
+        public void DeletePost(Post post)
         {
-            bool result = false;
-            Post? postExisted = GetPostById(id);
-            if (postExisted != null)
-            {
-                _context.Remove(postExisted);
-                _context.SaveChanges();
-                result = true;
-            }
-            return result;
+            //bool result = false;
+            //Post? postExisted = GetPostById(id);
+            //if (postExisted != null)
+            //{
+            //    _context.Remove(postExisted);
+            //    _context.SaveChanges();
+            //    result = true;
+            //}
+            //return result;
+            _context = new EventflowerexchangeContext();
+            _context.Remove(post);
+            _context.SaveChanges();
+
         }
     }
 }
