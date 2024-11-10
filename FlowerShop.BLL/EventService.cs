@@ -28,6 +28,13 @@ namespace FlowerShop.BLL
         {
             _eventRepo.RemoveEventcategory(id);
         }
+
+    
+        public void DeleteEventCategory(EventCategory x)
+        {
+            _eventRepo.Delete(x);
+        }
+
         public bool UpdateEventCategory(EventCategory category)
         {
             return _eventRepo.UpdateEventcategory(category);

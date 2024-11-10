@@ -51,5 +51,12 @@ namespace FlowerShop.DAL.Repos
             }
             return result;
         }
+
+        public void Delete(EventCategory x)
+        {
+            _context = new();
+            _context.EventCategories.Remove(x);
+            _context.SaveChanges();
+        }
     }
 }

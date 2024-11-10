@@ -7,6 +7,12 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="CategoryDetailManagement.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CategoryManagement.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="DetailWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -36,6 +42,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="CategoryDetailManagement.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CategoryManagement.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="DetailWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

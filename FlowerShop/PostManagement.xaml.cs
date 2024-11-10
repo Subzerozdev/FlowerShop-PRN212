@@ -27,6 +27,7 @@ namespace FlowerShop
         }
 
         private PostService PostService = new();
+        public User? CurrentAccount { get; set; }
 
         public void FillDataGrid()
         {
@@ -36,6 +37,13 @@ namespace FlowerShop
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             FillDataGrid();
+
+            if (CurrentAccount.RoleId == 2)
+            {
+                Create_Button.IsEnabled = false;
+                Update_Button.IsEnabled = false;
+                Delete_Button.IsEnabled = false;
+            }
         }
 
         private void Quit_Button_Click(object sender, RoutedEventArgs e)

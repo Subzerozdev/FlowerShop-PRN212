@@ -34,6 +34,13 @@ namespace FlowerShop
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             Load();
+
+            if (CurrentAccount.RoleId == 2) 
+            {
+                btnCategory.IsEnabled = false;
+                btnOrder.IsEnabled = false;
+                btnUser.IsEnabled = false;
+            }
         }
 
         private void Load()
@@ -99,12 +106,17 @@ namespace FlowerShop
 
         private void btnCategory_Click(object sender, RoutedEventArgs e)
         {
+            CategoryManagement d =new CategoryManagement();
+            d.ShowDialog();
+
 
         }
 
         private void btnPost_Click(object sender, RoutedEventArgs e)
         {
+
             PostManagement postManagement = new PostManagement();
+            postManagement.CurrentAccount = this.CurrentAccount;    
             postManagement.ShowDialog();
             Load();
         }

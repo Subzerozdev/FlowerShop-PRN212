@@ -1,0 +1,26 @@
+﻿<Window x:Class="FlowerShop.CategoryDetailManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlowerShop"
+        mc:Ignorable="d"
+        Title="CategoryDetailManagement" Height="450" Width="800"  Background="#FF3AADA1"   Loaded="Window_Loaded">
+    <Grid>
+
+        <Label x:Name="DetailWindowModeLabel" Content="Thêm mới | Chỉnh sửa Danh Mục" HorizontalAlignment="Left" Height="80" Margin="38,20,0,0" VerticalAlignment="Top" Width="814" FontWeight="Heavy" FontSize="40" FontStyle="Italic" Foreground="Orange" Grid.ColumnSpan="2"/>
+
+        <Rectangle HorizontalAlignment="Center" Height="228" Margin="0,132,0,0" Stroke="Black" VerticalAlignment="Top" Width="750" Fill="#CCCCFF" RadiusX="10" RadiusY="10" />
+
+        <Label Content="Số thứ tự" HorizontalAlignment="Left" Height="45" Margin="38,151,0,0" VerticalAlignment="Top" Width="107" Foreground="#353935" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="CateIdTextBox" HorizontalAlignment="Left" Height="45" Margin="225,151,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="157" TabIndex="0"/>
+
+        <Label Content="Tên danh mục" HorizontalAlignment="Left" Height="45" Margin="38,216,0,0" VerticalAlignment="Top" Width="147" Foreground="#353935" RenderTransformOrigin="0.352,0.568"  FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="NameCateTextBox"  HorizontalAlignment="Left" Height="45" Margin="225,217,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="157" TabIndex="1"/>
+
+
+        <Button x:Name="SaveButton" Content="Lưu thông tin " HorizontalAlignment="Left" Height="76" Margin="539,155,0,0" VerticalAlignment="Top" Width="187" TabIndex="8"  FontSize="20" FontWeight="Bold" Background="#5F9EA0" Click="SaveButton_Click"  Style="{StaticResource mainButton}" />
+        <Button x:Name="CloseButton" Content="Thoát" HorizontalAlignment="Left" Height="71" Margin="536,265,0,0" VerticalAlignment="Top" Width="193" TabIndex="9" FontSize="20" FontWeight="Bold" Background="#A52A2A" Click="CloseButton_Click"    Style="{StaticResource mainButton}"  />
+
+    </Grid>
+</Window>

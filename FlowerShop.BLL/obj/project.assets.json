@@ -3070,19 +3070,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nam\\.nuget\\packages\\": {}
+    "C:\\Users\\2111d\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nam\\Desktop\\PRN_Assignment\\FlowerShop-PRN212\\FlowerShop.BLL\\FlowerShop.BLL.csproj",
+      "projectUniqueName": "C:\\Users\\2111d\\Downloads\\FlowerShop-PRN212\\FlowerShop.BLL\\FlowerShop.BLL.csproj",
       "projectName": "FlowerShop.BLL",
-      "projectPath": "C:\\Users\\Nam\\Desktop\\PRN_Assignment\\FlowerShop-PRN212\\FlowerShop.BLL\\FlowerShop.BLL.csproj",
-      "packagesPath": "C:\\Users\\Nam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nam\\Desktop\\PRN_Assignment\\FlowerShop-PRN212\\FlowerShop.BLL\\obj\\",
+      "projectPath": "C:\\Users\\2111d\\Downloads\\FlowerShop-PRN212\\FlowerShop.BLL\\FlowerShop.BLL.csproj",
+      "packagesPath": "C:\\Users\\2111d\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\2111d\\Downloads\\FlowerShop-PRN212\\FlowerShop.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Nam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\2111d\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3097,8 +3097,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Nam\\Desktop\\PRN_Assignment\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj": {
-              "projectPath": "C:\\Users\\Nam\\Desktop\\PRN_Assignment\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj"
+            "C:\\Users\\2111d\\Downloads\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj": {
+              "projectPath": "C:\\Users\\2111d\\Downloads\\FlowerShop-PRN212\\FlowerShop.DAL\\FlowerShop.DAL.csproj"
             }
           }
         }
