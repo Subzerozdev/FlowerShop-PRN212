@@ -91,5 +91,36 @@ namespace FlowerShop
             this.detailNumber = 0;
             Load();
         }
+
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+            return;
+        }
+
+        private void btnCategory_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnPost_Click(object sender, RoutedEventArgs e)
+        {
+            PostManagement postManagement = new PostManagement();
+            postManagement.ShowDialog();
+            Load();
+        }
+
+        private void btnOrder_Click_1(object sender, RoutedEventArgs e)
+        {
+            OrderManagement orderManagement = new OrderManagement();
+            orderManagement.ShowDialog();   
+            Load();
+        }
+
+        private void btnUser_Click(object sender, RoutedEventArgs e)
+        {
+            StaffManagement staffManagement = new StaffManagement();
+            staffManagement.ShowDialog();
+            Load();
+        }
     }
 }

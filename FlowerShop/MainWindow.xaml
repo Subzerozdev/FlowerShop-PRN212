@@ -15,13 +15,11 @@
         </Grid>
         <Grid Height="53" Background="#FF3AADA1">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10 0">
-                <Button x:Name="btnHome" Uid="0" Width="150" Content="HOME" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White"/>
-                <Button Uid="1" Width="150" Content="CATEGORY" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White"/>
-                <Button Uid="2" Width="150" Content="TYPE" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White"/>
-                <Button Uid="3" Width="150" Content="POST" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White"/>
-                <Button x:Name="btnOrder" Uid="4" Width="150" Content="ORDER" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" Click="btnOrder_Click"/>
-                <Button Uid="5" Width="150" Content="ERROR" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White"/>
-                <Button Uid="6" Width="150" Content="ERROR" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White"/>
+                <Button x:Name="btnHome" Width="212" Content="HOME" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" Click="btnHome_Click"/>
+                <Button x:Name="btnCategory" Width="212" Content="CATEGORY" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" Click="btnCategory_Click"/>
+                <Button x:Name="btnPost" Width="212" Content="POST" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" Click="btnPost_Click"/>
+                <Button x:Name="btnOrder" Width="212" Content="ORDER" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" Click="btnOrder_Click_1"/>
+                <Button x:Name="btnUser" Width="212" Content="USER" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" Click="btnUser_Click"/>
             </StackPanel>
         </Grid>
         <Grid Height="508">
