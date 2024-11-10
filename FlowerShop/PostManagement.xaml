@@ -14,7 +14,7 @@
 
         <!-- Header with Background Color and Shadow -->
         <Border Background="#FF3AADA1" CornerRadius="10" Padding="10" Margin="10" Effect="{DynamicResource DropShadow}">
-            <TextBlock Text="Post Management" FontSize="30" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+            <TextBlock Text="Quản Lý Bài Viết" FontSize="30" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
         </Border>
 
         <!-- DataGrid and Controls -->
@@ -32,34 +32,34 @@
                           FontSize="13">
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
-                        <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="50"/>
-                        <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="120"/>
-                        <DataGridTextColumn Header="Address" Binding="{Binding Address}" Width="100"/>
-                        <DataGridTextColumn Header="Start Date" Binding="{Binding StartDate}" Width="100"/>
-                        <DataGridTextColumn Header="End Date" Binding="{Binding EndDate}" Width="100"/>
-                        <DataGridTextColumn Header="Price" Binding="{Binding Price}" Width="80"/>
-                        <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="80"/>
-                        <DataGridTextColumn Header="Category" Binding="{Binding Category.Name}" Width="150"/>
+                        <DataGridTextColumn Header="Tên" Binding="{Binding Name}" Width="50"/>
+                        <DataGridTextColumn Header="Mô tả" Binding="{Binding Description}" Width="120"/>
+                        <DataGridTextColumn Header="Địa chỉ" Binding="{Binding Address}" Width="100"/>
+                        <DataGridTextColumn Header="Bắt đầu vào" Binding="{Binding StartDate}" Width="100"/>
+                        <DataGridTextColumn Header="Kết thúc vào" Binding="{Binding EndDate}" Width="100"/>
+                        <DataGridTextColumn Header="Giá" Binding="{Binding Price}" Width="80"/>
+                        <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" Width="80"/>
+                        <DataGridTextColumn Header="Loại" Binding="{Binding Category.Name}" Width="150"/>
                     </DataGrid.Columns>
                 </DataGrid>
             </Border>
 
             <!-- Control Buttons with Rounded Corners and Shadows -->
             <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="31,0,0,0" Height="407">
-                <Button x:Name="Create_Button" Content="Create" Width="204" Height="54" Background="#FF3AADA1" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" Margin="0,0,0,10" BorderThickness="0" Click="Create_Button_Click" Style="{StaticResource mainButton}" />
-                <Button x:Name="Update_Button" Content="Update" Width="200" Height="54" Background="#FF3AADA1" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" Margin="0,0,0,10" BorderThickness="0" Click="Update_Button_Click" Style="{StaticResource mainButton}" />
-                <Button x:Name="Delete_Button" Content="Delete" Width="206" Height="54" Background="#FF3AADA1" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" Margin="0,0,0,10" BorderThickness="0" Click="Delete_Button_Click" Style="{StaticResource mainButton}" />
-                <Button x:Name="Quit_Button" Content="Quit" Width="209" Height="55" Background="#FF555555" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" BorderThickness="0" Click="Quit_Button_Click" Style="{StaticResource mainButton}" />
+                <Button x:Name="Create_Button" Content="Tạo mới" Width="204" Height="54" Background="#FF3AADA1" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" Margin="0,0,0,10" BorderThickness="0" Click="Create_Button_Click" Style="{StaticResource mainButton}" />
+                <Button x:Name="Update_Button" Content="Cập nhập" Width="200" Height="54" Background="#FF3AADA1" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" Margin="0,0,0,10" BorderThickness="0" Click="Update_Button_Click" Style="{StaticResource mainButton}" />
+                <Button x:Name="Delete_Button" Content="Xóa" Width="206" Height="54" Background="#FF3AADA1" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" Margin="0,0,0,10" BorderThickness="0" Click="Delete_Button_Click" Style="{StaticResource mainButton}" />
+                <Button x:Name="Quit_Button" Content="Thoát" Width="209" Height="55" Background="#FF555555" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" BorderThickness="0" Click="Quit_Button_Click" Style="{StaticResource mainButton}" />
             </StackPanel>
         </Grid>
 
         <!-- Search Section with Shadows -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,23,0,0" Grid.Row="1" Width="1000">
 
-            <Button x:Name="Search_Button" Content="Search" Width="140" Height="47" Background="#FF3AADA1" Foreground="White" FontWeight="Bold" Padding="5" Margin="5" BorderThickness="0" Style="{StaticResource mainButton}" Click="Search_Button_Click" />
-            <Label Content="Name:" FontSize="15" VerticalAlignment="Center" Margin="20,0,0,0"/>
+            <Button x:Name="Search_Button" Content="Tìm kiếm" Width="140" Height="47" Background="#FF3AADA1" Foreground="White" FontWeight="Bold" Padding="5" Margin="5" BorderThickness="0" Style="{StaticResource mainButton}" Click="Search_Button_Click" />
+            <Label Content="Tên:" FontSize="15" VerticalAlignment="Center" Margin="20,0,0,0"/>
             <TextBox x:Name="PostNameSearchTextBox" Width="150" Height="35" FontSize="13" Padding="5" Background="LightGray" BorderBrush="#FFB5651D" BorderThickness="1"/>
-            <Label Content="Description:" Width="100" FontSize="15" VerticalAlignment="Center" Margin="20,0,0,0"/>
+            <Label Content="Mô tả:" Width="100" FontSize="15" VerticalAlignment="Center" Margin="20,0,0,0"/>
             <TextBox x:Name="DescriptionSearchTextBox"  Width="200" Height="35" FontSize="13" Padding="5" Background="LightGray" BorderBrush="#FFB5651D" BorderThickness="1"/>
         </StackPanel>
     </Grid>

@@ -29,7 +29,7 @@
         <Border Background="#FFFFFF" CornerRadius="0 10 10 0"  Grid.RowSpan="3" Grid.ColumnSpan="2">
             <StackPanel VerticalAlignment="Center">
 
-                <TextBlock Text="Sign in to App" Foreground="#3AB19B" Style="{StaticResource TitleText}" />
+                <TextBlock Text="Đăng nhập vào app" Foreground="#3AB19B" Style="{StaticResource TitleText}" />
                 <StackPanel Orientation="Horizontal" Margin="0 20" HorizontalAlignment="Center"/>
 
                 <Border BorderBrush="#ACB0AF" BorderThickness="1" Margin="70 7" CornerRadius="5" Width="351">
@@ -59,7 +59,7 @@
                     </Grid>
                 </Border>
 
-                <Button Content="Sign In" Click="LoginButton_Click" Style="{StaticResource mainButton}" />
+                <Button Content="Đăng nhập" Click="LoginButton_Click" Style="{StaticResource mainButton}" />
 
             </StackPanel>
         </Border>

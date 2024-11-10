@@ -10,13 +10,13 @@
         <DataGrid x:Name="dtgUsers" AutoGenerateColumns="False" SelectionMode="Single" Margin="0,83,0,97" SelectionChanged="dtgUsers_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
-                <DataGridTextColumn Header="Username" Binding="{Binding Username}" Width="100"/>
-                <DataGridTextColumn Header="Full Name" Binding="{Binding FullName}" Width="150"/>
-                <DataGridTextColumn Header="Phone" Binding="{Binding Phone}" Width="100"/>
-                <DataGridTextColumn Header="Address" Binding="{Binding Address}" Width="150"/>
-                <DataGridCheckBoxColumn Header="IsActive" Binding="{Binding IsActive}" Width="80"/>
+                <DataGridTextColumn Header="Tên" Binding="{Binding Username}" Width="100"/>
+                <DataGridTextColumn Header="Đầy đủ họ tên" Binding="{Binding FullName}" Width="150"/>
+                <DataGridTextColumn Header="Số điện thoại" Binding="{Binding Phone}" Width="100"/>
+                <DataGridTextColumn Header="Địa chỉ" Binding="{Binding Address}" Width="150"/>
+                <DataGridCheckBoxColumn Header="Đang hoạt động" Binding="{Binding IsActive}" Width="80"/>
                 <DataGridTextColumn Header="Role ID" Binding="{Binding RoleId}" Width="80"/>
-                <DataGridTextColumn Header="Created At" Binding="{Binding CreateAt, StringFormat=\{0:yyyy-MM-dd HH:mm:ss\}, TargetNullValue='N/A'}" Width="150"/>
+                <DataGridTextColumn Header="Được tạo vào Ngày" Binding="{Binding CreateAt, StringFormat=\{0:yyyy-MM-dd HH:mm:ss\}, TargetNullValue='N/A'}" Width="150"/>
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
@@ -33,6 +33,6 @@
             <Button x:Name="btnUpdate" Content="Cập nhập " Width="116" Click="btnUpdate_Click" Style="{StaticResource ResourceKey=mainButton}" Height="51"/>
             <Button x:Name="btnDelete" Content="Xóa" Width="121" Click="btnDelete_Click" Style="{StaticResource ResourceKey=mainButton}"/>
         </StackPanel>
-        <Label Content="STAFF MANAGEMENT" HorizontalAlignment="Left" Margin="284,22,0,0" VerticalAlignment="Top" Height="56" Width="258" FontSize="25"/>
+        <Label Content="Quản Lý Nhân Viên " HorizontalAlignment="Left" Margin="284,22,0,0" VerticalAlignment="Top" Height="56" Width="258" FontSize="25"/>
     </Grid>
 </Window>

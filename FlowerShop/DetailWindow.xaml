@@ -15,46 +15,46 @@
             </Border.Effect>
 
             <Grid Background="Transparent">
-                <TextBlock Text="Create or Update Post" FontSize="24" FontWeight="Bold" Foreground="#8B008B" 
+                <TextBlock Text="Tạo mới hoặc cập nhập" FontSize="24" FontWeight="Bold" Foreground="#8B008B" 
                                    Margin="0,20,0,20" HorizontalAlignment="Center"/>
 
                 <StackPanel Orientation="Vertical" VerticalAlignment="Top" Width="400" HorizontalAlignment="Center" Margin="0,50,0,0">
 
 
-                    <TextBlock Text="Name" Foreground="#8B4513" FontSize="14"/>
+                    <TextBlock Text="Tên" Foreground="#8B4513" FontSize="14"/>
                     <TextBox x:Name="txtPostName" Margin="0,5,0,10" Background="White" 
                                      BorderBrush="#DB7093" BorderThickness="1" />
 
-                    <TextBlock Text="Description" Foreground="#8B4513" FontSize="14"/>
+                    <TextBlock Text="Mô tả" Foreground="#8B4513" FontSize="14"/>
                     <TextBox x:Name="txtDescription" Margin="0,5,0,10" Background="White" 
                                      BorderBrush="#DB7093" BorderThickness="1" />
 
-                    <TextBlock Text="Thumbnail URL" Foreground="#8B4513" FontSize="14"/>
+                    <TextBlock Text="Hình URL" Foreground="#8B4513" FontSize="14"/>
                     <TextBox x:Name="txtThumbnail" Margin="0,5,0,10" Background="White" 
                                      BorderBrush="#DB7093" BorderThickness="1" />
 
-                    <TextBlock Text="Address" Foreground="#8B4513" FontSize="14"/>
+                    <TextBlock Text="Địa chỉ" Foreground="#8B4513" FontSize="14"/>
                     <TextBox x:Name="txtAddress" Margin="0,5,0,10" Background="White"  
                                      BorderBrush="#DB7093" BorderThickness="1" />
 
-                    <TextBlock Text="Start Date" Foreground="#8B4513" FontSize="14"/>
+                    <TextBlock Text="Bắt đầu vào" Foreground="#8B4513" FontSize="14"/>
                     <DatePicker x:Name="StartDatePicker" Margin="0,5,0,10" Background="White" 
                                         BorderBrush="#DB7093" BorderThickness="1" />
 
-                    <TextBlock Text="End Date" Foreground="#8B4513" FontSize="14"/>
+                    <TextBlock Text="Kết thúc vào" Foreground="#8B4513" FontSize="14"/>
                     <DatePicker x:Name="EndDatePicker" Margin="0,5,0,10" Background="White" 
                                         BorderBrush="#DB7093" BorderThickness="1" />
 
-                    <TextBlock Text="Price" Foreground="#8B4513" FontSize="14"/>
+                    <TextBlock Text="Giá" Foreground="#8B4513" FontSize="14"/>
                     <TextBox x:Name="txtPrice" Margin="0,5,0,10" Background="White" 
                                      BorderBrush="#DB7093" BorderThickness="1"/>
-                    <TextBlock Text="Category" Foreground="#8B4513" FontSize="14"/>
+                    <TextBlock Text="Loại" Foreground="#8B4513" FontSize="14"/>
                     <ComboBox x:Name="CategoryNameCombobox" Margin="0,5,0,10" Background="White" 
                                 BorderBrush="#DB7093" BorderThickness="1"/>
 
-                    <Button  x:Name="Save_Button" Content="Save Post" Background="#DB7093" Foreground="White" Width="150" Height="35" Margin="0,10,0,0" HorizontalAlignment="Center" 
+                    <Button  x:Name="Save_Button" Content="Lưu" Background="#DB7093" Foreground="White" Width="150" Height="35" Margin="0,10,0,0" HorizontalAlignment="Center" 
                                     BorderBrush="Transparent" FontWeight="Bold" Click="Save_Button_Click"/>
-                    <Button x:Name="Quit_Button" Content="Quit" Background="#DB7093" Foreground="White" Width="150" Height="35" Margin="0,10,0,0" HorizontalAlignment="Center" 
+                    <Button x:Name="Quit_Button" Content="Thoát" Background="#DB7093" Foreground="White" Width="150" Height="35" Margin="0,10,0,0" HorizontalAlignment="Center" 
                 BorderBrush="Transparent" FontWeight="Bold" Click="Quit_Button_Click"/>
                 </StackPanel>
             </Grid>
