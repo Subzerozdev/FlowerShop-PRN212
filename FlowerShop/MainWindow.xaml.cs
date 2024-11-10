@@ -30,17 +30,10 @@ namespace FlowerShop
         }
         private PostService PostService = new();
 
-        
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             Load();
-
-            if (CurrentAccount.RoleId == 2) 
-            {
-                btnCategory.IsEnabled = false;
-                btnOrder.IsEnabled = false;
-                btnUser.IsEnabled = false;
-            }
         }
 
         private void Load()
@@ -92,6 +85,7 @@ namespace FlowerShop
         private void btnOrder_Click(object sender, RoutedEventArgs e)
         {
             OrderWindow orderWindow = new OrderWindow();
+            orderWindow.Account = this.CurrentAccount;
             orderWindow.Details = this.Details;
             orderWindow.Carts = this.Carts;
             orderWindow.ShowDialog();
@@ -106,17 +100,12 @@ namespace FlowerShop
 
         private void btnCategory_Click(object sender, RoutedEventArgs e)
         {
-            CategoryManagement d =new CategoryManagement();
-            d.ShowDialog();
-
 
         }
 
         private void btnPost_Click(object sender, RoutedEventArgs e)
         {
-
             PostManagement postManagement = new PostManagement();
-            postManagement.CurrentAccount = this.CurrentAccount;    
             postManagement.ShowDialog();
             Load();
         }
@@ -124,7 +113,7 @@ namespace FlowerShop
         private void btnOrder_Click_1(object sender, RoutedEventArgs e)
         {
             OrderManagement orderManagement = new OrderManagement();
-            orderManagement.ShowDialog();   
+            orderManagement.ShowDialog();
             Load();
         }
 

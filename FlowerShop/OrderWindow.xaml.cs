@@ -26,6 +26,7 @@ namespace FlowerShop
         private OrderService orderService = new();
         public List<OrderDetail>? Details { get; set; }
         public List<Cart>? Carts { get; set; }
+        public User? Account { get; set; }
         public OrderWindow()
         {
             InitializeComponent();
@@ -35,7 +36,7 @@ namespace FlowerShop
         {
             bool isValid = ValidField();
             if (!isValid) return;
-            Order order = FillOrderTextBox();
+            Order order = FillOrderTextBox(Account);
             int orderID = orderService.AddOrder(order, Details);
             Order? currentOrder = orderService.GetOrderById(orderID);
             if (currentOrder != null)
@@ -84,7 +85,7 @@ namespace FlowerShop
             return result;
         }
 
-        private Order FillOrderTextBox()
+        private Order FillOrderTextBox(User user)
         {
             Order order = new Order();
             order.FullName = txtFullName.Text.Trim();
@@ -94,6 +95,7 @@ namespace FlowerShop
             order.Note = txtNote.Text.Trim();
             order.PaymentMethod = CheckPaymentMethod();
             order.TotalMoney = float.Parse(txtTotalMoney.Text);
+            order.UserId = user.Id;
             return order;
         }
 
@@ -151,7 +153,7 @@ namespace FlowerShop
             double? total = 0;
             foreach (var detail in Details)
             {
-                total += detail.TotalMoney; 
+                total += detail.TotalMoney;
 
             }
             txtTotalMoney.Text = total.ToString();

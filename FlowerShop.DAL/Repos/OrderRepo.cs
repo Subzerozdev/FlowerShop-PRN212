@@ -16,6 +16,7 @@ namespace FlowerShop.DAL.Repos
             _context = new();
             int newOrderId = _context.Orders.OrderByDescending(o => o.Id).FirstOrDefault().Id + 1;
             order.Id = newOrderId;
+            order.Status = "Đang xử lí";
             _context.Orders.Add(order);
             _context.SaveChanges();
             foreach (var detail in orderDetails)

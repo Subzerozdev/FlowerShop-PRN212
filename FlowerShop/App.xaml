@@ -147,6 +147,17 @@
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
         </Style>
+        <!-- Label Style -->
+        <Style x:Key="LabelStyle" TargetType="Label">
+            <Setter Property="Foreground" Value="DimGray"/>
+            <Setter Property="FontSize" Value="15"/>
+        </Style>
+        <!-- Label Header Style -->
+        <Style x:Key="LabelHeaderStyle" TargetType="Label">
+            <Setter Property="Foreground" Value="DimGray"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontWeight" Value="ExtraBold"/>
+        </Style>
         <!-- DataGrid Style -->
         <Style x:Key="DataGridStyle" TargetType="DataGrid">
             <Setter Property="Padding" Value="0,0,2,2"/>

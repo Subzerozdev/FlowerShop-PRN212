@@ -17,6 +17,12 @@ namespace FlowerShop.BLL
         public bool UpdateOrder(Order order) => _orderRepo.UpdateOrder(order);
         public bool DeleteOrder(int id) => _orderRepo.DeleteOrder(id);
         public List<Order> GetAllOrders() => _orderRepo.GetAllOrders();
+
+        public List<Order> GetOrderBySearch(string customerName, int orderId)
+        {
+            List<Order> orders = GetAllOrders();
+            return orders.Where(o => o.Id == orderId || o.FullName.Contains(customerName)).ToList();
+        }
     }
 
 }
