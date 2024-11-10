@@ -1,0 +1,31 @@
+﻿<Window x:Class="FlowerShop.InvoiceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlowerShop"
+        mc:Ignorable="d"
+        Title="InvoiceWindow" Height="600" Width="650" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="#FF3AADA1" Loaded="Window_Loaded">
+    <Grid>
+        <Grid Margin="44,57,44,57" Background="White">
+            <Label Content="HÓA ĐƠN" FontWeight="ExtraBold" FontSize="50" HorizontalAlignment="Left" Margin="261,10,0,0" VerticalAlignment="Top" Style="{StaticResource textBox}" RenderTransformOrigin="0.147,1.011"/>
+            <Label Content="HoaLoiCu" FontWeight="ExtraBold" FontSize="30" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Style="{StaticResource textBox}"/>
+            <Label Content="Mã số đơn hàng" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="51,101,0,0" VerticalAlignment="Top" Style="{StaticResource textBox}"/>
+            <Label Content="Ngày tạo đơn" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="51,135,0,0" VerticalAlignment="Top" Style="{StaticResource textBox}"/>
+            <Label Content="Tổng tiền" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="51,169,0,0" VerticalAlignment="Top" Style="{StaticResource textBox}"/>
+            <Label Content="Hình thức trả" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="51,203,0,0" VerticalAlignment="Top" Style="{StaticResource textBox}"/>
+            <DataGrid x:Name="dtgOrderDetail" Margin="53,256,53,32" Style="{StaticResource DataGridStyle}" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="STT" Width="100" Binding="{Binding Id}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                    <DataGridTextColumn Header="Sản phẩm" Width="240" Binding="{Binding Post.Name}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                    <DataGridTextColumn Header="Giá" Width="145"  Binding="{Binding TotalMoney}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <TextBox x:Name="txtOrderId" Foreground="Black" Background="LightGray" IsEnabled="False" HorizontalAlignment="Left" Margin="208,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="301" Height="29" Style="{StaticResource TextBoxStyleO}"/>
+            <TextBox x:Name="txtOrderDate" Foreground="Black" Background="LightGray" IsEnabled="False" HorizontalAlignment="Left" Margin="208,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="301" Height="29" Style="{StaticResource TextBoxStyleO}"/>
+            <TextBox x:Name="txtTotalMoney" Foreground="Black" Background="LightGray" IsEnabled="False" HorizontalAlignment="Left" Margin="208,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="301" Height="29" Style="{StaticResource TextBoxStyleO}"/>
+            <TextBox x:Name="txtPaymentMethod" Foreground="Black" Background="LightGray" IsEnabled="False" HorizontalAlignment="Left" Margin="208,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="301" Height="29" Style="{StaticResource TextBoxStyleO}"/>
+        </Grid>
+        <Button x:Name="btnExit" Content="EXIT" Background="White" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Margin="614,0,0,0" VerticalAlignment="Top" Click="btnExit_Click"/>
+    </Grid>
+</Window>

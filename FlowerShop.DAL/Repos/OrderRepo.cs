@@ -10,15 +10,11 @@ namespace FlowerShop.DAL.Repos
 {
     public class OrderRepo
     {
-        private EventflowerexchangeContext _context;
-
-        public OrderRepo()
+        private EventflowerexchangeContext? _context;
+        public int CreateOrder(Order order, List<OrderDetail> orderDetails)
         {
-            _context = new EventflowerexchangeContext();
-        }
-        public bool CreateOrder(Order order, List<OrderDetail> orderDetails)
-        {
-            int newOrderId = _context.Orders.OrderByDescending(o => o.Id).FirstOrDefault().Id+1;
+            _context = new();
+            int newOrderId = _context.Orders.OrderByDescending(o => o.Id).FirstOrDefault().Id + 1;
             order.Id = newOrderId;
             _context.Orders.Add(order);
             _context.SaveChanges();
@@ -30,14 +26,16 @@ namespace FlowerShop.DAL.Repos
             }
             _context.OrderDetails.AddRange(orderDetails);
             _context.SaveChanges();
-            return true;
+            return order.Id;
         }
         public Order? GetOrderById(int id)
         {
+            _context=new();
             return _context.Orders.Include(o => o.OrderDetails).FirstOrDefault(o => o.Id == id);
         }
         public bool UpdateOrder(Order order)
         {
+            _context=new();
             bool result = false;
             var existingOrder = _context.Orders.Find(order.Id);
             if (existingOrder != null)
@@ -50,6 +48,7 @@ namespace FlowerShop.DAL.Repos
         }
         public bool DeleteOrder(int id)
         {
+            _context=new();
             bool result = false;
             var order = _context.Orders.Find(id);
             if (order != null)
@@ -62,6 +61,7 @@ namespace FlowerShop.DAL.Repos
         }
         public List<Order> GetAllOrders()
         {
+            _context = new();
             return _context.Orders.Include(o => o.OrderDetails).ToList();
         }
     }

@@ -19,12 +19,10 @@ namespace FlowerShop
     /// </summary>
     public partial class MainWindow : Window
     {
-
-
-        public User CurrentAccount { get; set; }  //user gọi từ màn hình login 
+        public User? CurrentAccount { get; set; }
         public List<Cart>? Carts { get; set; }
         private PostService postService = new();
-        public int detailNumber=0;
+        public int detailNumber = 0;
         public List<OrderDetail>? Details { get; set; }
         public MainWindow()
         {
@@ -58,29 +56,9 @@ namespace FlowerShop
             dgOrderDetail.ItemsSource = this.Carts;
         }
 
-        private void btnSearch_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnAdd_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnDelete_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnHome_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
         private void btnLogOut_Click(object sender, RoutedEventArgs e)
         {
-            
+            this.CurrentAccount = null;
             this.Close();
         }
 
@@ -98,7 +76,7 @@ namespace FlowerShop
 
                 OrderDetail detail = new OrderDetail();
                 detail.PostId = post.Id;
-                detail.TotalMoney=post.Price;
+                detail.TotalMoney = post.Price;
                 this.Details.Add(detail);
                 FillCart();
             }
@@ -106,11 +84,11 @@ namespace FlowerShop
 
         private void btnOrder_Click(object sender, RoutedEventArgs e)
         {
-            this.detailNumber = 0;
-            this.Carts = null;
             OrderWindow orderWindow = new OrderWindow();
             orderWindow.Details = this.Details;
+            orderWindow.Carts = this.Carts;
             orderWindow.ShowDialog();
+            this.detailNumber = 0;
             Load();
         }
     }

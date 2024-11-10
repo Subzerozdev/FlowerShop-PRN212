@@ -10,27 +10,27 @@ namespace FlowerShop.DAL.Repos
 {
     public class PostRepo
     {
-        private EventflowerexchangeContext _context;
-        public PostRepo()
-        {
-            _context = new EventflowerexchangeContext();
-        }
+        private EventflowerexchangeContext? _context;
         public List<Post> GetAllPosts()
         {
+            _context = new();
             _context = new EventflowerexchangeContext();
             return _context.Posts.Include("Category").ToList();
         }
         public Post? GetPostById(int id)
         {
+            _context = new();
             return _context.Posts.FirstOrDefault(x => x.Id == id);
         }
         public void CreatePost(Post post)
         {
+            _context = new();
             _context.Posts.Add(post);
             _context.SaveChanges();
         }
         public bool UpdatePost(Post post)
         {
+            _context = new();
             bool result = false;
             Post? postExisted = _context.Posts.FirstOrDefault(p => p.Id == post.Id);
             if (postExisted != null)
@@ -49,15 +49,6 @@ namespace FlowerShop.DAL.Repos
         }
         public void DeletePost(Post post)
         {
-            //bool result = false;
-            //Post? postExisted = GetPostById(id);
-            //if (postExisted != null)
-            //{
-            //    _context.Remove(postExisted);
-            //    _context.SaveChanges();
-            //    result = true;
-            //}
-            //return result;
             _context = new EventflowerexchangeContext();
             _context.Remove(post);
             _context.SaveChanges();

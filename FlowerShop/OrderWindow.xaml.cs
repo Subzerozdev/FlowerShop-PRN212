@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using FlowerShop.BLL;
 using FlowerShop.DAL.Entities;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace FlowerShop
 {
@@ -24,6 +25,7 @@ namespace FlowerShop
     {
         private OrderService orderService = new();
         public List<OrderDetail>? Details { get; set; }
+        public List<Cart>? Carts { get; set; }
         public OrderWindow()
         {
             InitializeComponent();
@@ -31,52 +33,68 @@ namespace FlowerShop
 
         private void btnPlaceOrder_Click(object sender, RoutedEventArgs e)
         {
-            // Email, Address, Phone and Payment must not be null or invalid
+            bool isValid = ValidField();
+            if (!isValid) return;
+            Order order = FillOrderTextBox();
+            int orderID = orderService.AddOrder(order, Details);
+            Order? currentOrder = orderService.GetOrderById(orderID);
+            if (currentOrder != null)
+            {
+                SuccessMessage("Order");
+                this.Hide();
+                InvoiceWindow invoiceWindow = new InvoiceWindow();
+                invoiceWindow.Order = order;
+                invoiceWindow.Carts = Carts;
+                invoiceWindow.Show();
+            }
+            else
+            {
+                ErrorMessage();
+            }
+        }
+
+        private bool ValidField()
+        {
+            bool result = true;
             string email = txtEmail.Text.Trim();
             if (IsStringValueValid(email))
             {
                 NotValidErrorMessage("Email");
-                return;
+                result = false;
             }
             string address = txtAddress.Text.Trim();
             if (IsStringValueValid(address))
             {
                 NotValidErrorMessage("Address");
-                return;
+                result = false;
             }
             string phone = txtPhone.Text.Trim();
             if (IsStringValueValid(phone)
                 || !IsPhoneNumber(phone))
             {
                 NotValidErrorMessage("Phone");
-                return;
+                result = false;
             }
             string? payment = CheckPaymentMethod();
             if (payment == null)
             {
                 NotValidErrorMessage("Payment Method");
-                return;
+                result = false;
             }
+            return result;
+        }
 
+        private Order FillOrderTextBox()
+        {
             Order order = new Order();
             order.FullName = txtFullName.Text.Trim();
-            order.Address = address;
-            order.Email = email;
-            order.Phone = phone;
+            order.Address = txtAddress.Text;
+            order.Email = txtEmail.Text;
+            order.Phone = txtPhone.Text;
             order.Note = txtNote.Text.Trim();
-            order.PaymentMethod = payment;
+            order.PaymentMethod = CheckPaymentMethod();
             order.TotalMoney = float.Parse(txtTotalMoney.Text);
-            bool result = orderService.AddOrder(order, Details);
-            if (result)
-            {
-                SuccessMessage("Order");
-                this.Hide();
-            }
-            else
-            {
-                ErrorMessage();
-            }
-
+            return order;
         }
 
         private string? CheckPaymentMethod()

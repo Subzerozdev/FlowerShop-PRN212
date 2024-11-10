@@ -15,7 +15,7 @@
         </Grid>
         <Grid Height="53" Background="#FF3AADA1">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10 0">
-                <Button x:Name="btnHome" Uid="0" Width="150" Content="HOME" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" Click="btnHome_Click"/>
+                <Button x:Name="btnHome" Uid="0" Width="150" Content="HOME" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White"/>
                 <Button Uid="1" Width="150" Content="CATEGORY" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White"/>
                 <Button Uid="2" Width="150" Content="TYPE" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White"/>
                 <Button Uid="3" Width="150" Content="POST" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White"/>
@@ -41,7 +41,7 @@
                 </DataGrid.Columns>
             </DataGrid>
             <Grid Margin="762,0,0,0">
-                <Button x:Name="btnAddToCart" Content="Add to Cart" Style="{StaticResource mainButton}" Margin="0,72,0,379" HorizontalAlignment="Center" Width="182" Click="btnAddToCart_Click" Background="#FF61C0AE"/>
+                <Button x:Name="btnAddToCart" Content="Add to Cart" Style="{StaticResource mainButton}" Margin="0,72,0,379" HorizontalAlignment="Center" Width="182" Click="btnAddToCart_Click"/>
                 <Button x:Name="btnOrder1" Content="Place Order" Style="{StaticResource mainButton}" Margin="0,424,0,27" HorizontalAlignment="Center" Width="182" Click="btnOrder_Click" />
                 <DataGrid x:Name="dgOrderDetail" Style="{StaticResource DataGridStyle}" Margin="0,157,0,121" AutoGenerateColumns="False">
                     <DataGrid.Columns>

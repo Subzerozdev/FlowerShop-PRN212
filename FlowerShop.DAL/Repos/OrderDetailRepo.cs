@@ -10,23 +10,21 @@ namespace FlowerShop.DAL.Repos
 {
     public class OrderDetailRepo
     {
-        private EventflowerexchangeContext _context;
-
-        public OrderDetailRepo()
-        {
-            _context = new EventflowerexchangeContext();
-        }
+        private EventflowerexchangeContext? _context;
         public void CreateOrderDetail(OrderDetail orderDetail)
         {
+            _context = new();
             _context.OrderDetails.Add(orderDetail);
             _context.SaveChanges();
         }
-        public OrderDetail GetOrderDetailById(int id)
+        public OrderDetail? GetOrderDetailById(int id)
         {
+            _context = new();
             return _context.OrderDetails.Include(od => od.Order).FirstOrDefault(od => od.Id == id);
         }
         public bool UpdateOrderDetail(OrderDetail orderDetail)
         {
+            _context = new();
             bool result = false;
             var existingOrderDetail = _context.OrderDetails.Find(orderDetail.Id);
             if (existingOrderDetail != null)
@@ -39,6 +37,7 @@ namespace FlowerShop.DAL.Repos
         }
         public bool DeleteOrderDetail(int id)
         {
+            _context = new();
             bool result = false;
             var orderDetail = _context.OrderDetails.Find(id);
             if (orderDetail != null)
@@ -51,10 +50,12 @@ namespace FlowerShop.DAL.Repos
         }
         public List<OrderDetail> GetAllOrderDetails()
         {
+            _context = new();
             return _context.OrderDetails.Include(od => od.Order).ToList();
         }
         public List<OrderDetail> GetOrderDetailsByOrder(int orderId)
         {
+            _context = new();
             return _context.OrderDetails
                            .Where(od => od.OrderId == orderId)
                            .Include(od => od.Order)

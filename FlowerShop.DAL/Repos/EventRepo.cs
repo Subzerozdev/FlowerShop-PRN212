@@ -9,26 +9,26 @@ namespace FlowerShop.DAL.Repos
 {
     public class EventRepo
     {
-        private EventflowerexchangeContext _context;
-        public EventRepo()
-        {
-            _context = new EventflowerexchangeContext();
-        }
+        private EventflowerexchangeContext? _context;
         public List<EventCategory> GetEventcategories()
         {
+            _context = new();
             return _context.EventCategories.ToList();
         }
         public EventCategory? GetEventcategory(int id)
         {
+            _context=new();
             return _context.EventCategories.FirstOrDefault(e => e.Id.Equals(id));
         }
         public void AddEventcategory(EventCategory eventcategory)
         {
+            _context= new();
             _context.EventCategories.Add(eventcategory);
             _context.SaveChanges();
         }
         public bool RemoveEventcategory(int id)
         {
+            _context= new();
             bool result = false;
             EventCategory? eventcategory = GetEventcategory(id);
             if (eventcategory != null)
@@ -40,6 +40,7 @@ namespace FlowerShop.DAL.Repos
         }
         public bool UpdateEventcategory(EventCategory eventcategory)
         {
+            _context= new();
             bool result = false;
             EventCategory? eventcategoryExisted = GetEventcategory(eventcategory.Id);
             if (eventcategoryExisted != null)

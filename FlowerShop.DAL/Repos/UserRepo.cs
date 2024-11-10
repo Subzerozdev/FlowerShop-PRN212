@@ -9,22 +9,21 @@ namespace FlowerShop.DAL.Repos
 {
     public class UserRepo
     {
-        private EventflowerexchangeContext _context;
-        public UserRepo()
-        {
-            _context = new EventflowerexchangeContext();
-        }
+        private EventflowerexchangeContext? _context;
         public User? GetUserByUsernameAndPassword(string username, string password)
         {
+            _context = new();
             return _context.Users.FirstOrDefault(u => u.Username.Equals(username) && u.Password.Equals(password));
         }
         public void AddUser(User user)
         {
+            _context=new();
             _context.Users.Add(user);
             _context.SaveChanges();
         }
         public bool CreateUser(User user)
         {
+            _context=new();
             bool result = false;
             User? userExisted = _context.Users.FirstOrDefault(u => u.Username.Equals(user.Username) || u.Phone.Equals(user.Phone));
             if (userExisted == null)
@@ -40,15 +39,18 @@ namespace FlowerShop.DAL.Repos
         }
         public List<User> GetAllUsers()
         {
+            _context = new();
             return _context.Users.ToList();
         }
 
         public User? GetUserById(int id)
         {
+            _context = new();
             return _context.Users.FirstOrDefault(u => u.Id.Equals(id));
         }
         public bool UpdateUser(User user)
         {
+            _context = new();
             bool result = false;
             User? userExisted = _context.Users.FirstOrDefault(u => u.Id.Equals(user.Id));
             if (userExisted != null)
@@ -64,6 +66,7 @@ namespace FlowerShop.DAL.Repos
         }
         public bool DeleteUser(int userId)
         {
+            _context = new();
             bool result = false;
             User? userExisted = _context.Users.FirstOrDefault(u => u.Id.Equals(userId));
             if (userExisted != null)
