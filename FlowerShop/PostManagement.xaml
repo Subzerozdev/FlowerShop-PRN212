@@ -46,16 +46,16 @@
 
             <!-- Control Buttons with Rounded Corners and Shadows -->
             <StackPanel Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,0,10,0">
-                <Button x:Name="Create_Button" Content="Create" Width="200" Height="45" Background="#FF6B4226" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" Margin="0,0,0,10" BorderThickness="0" Click="Create_Button_Click" />
-                <Button x:Name="Update_Button" Content="Update" Width="200" Height="45" Background="#FF6B4226" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" Margin="0,0,0,10" BorderThickness="0" Click="Update_Button_Click" />
-                <Button x:Name="Delete_Button" Content="Delete" Width="200" Height="45" Background="#FFB22222" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" Margin="0,0,0,10" BorderThickness="0" Click="Delete_Button_Click" />
-                <Button x:Name="Quit_Button" Content="Quit" Width="200" Height="45" Background="#FF555555" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" Margin="0,0,0,10" BorderThickness="0" Click="Quit_Button_Click" />
+                <Button x:Name="Create_Button" Content="Create" Width="204" Height="54" Background="#FF6B4226" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" Margin="0,0,0,10" BorderThickness="0" Click="Create_Button_Click"  />
+                <Button x:Name="Update_Button" Content="Update" Width="200" Height="54" Background="#FF6B4226" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" Margin="0,0,0,10" BorderThickness="0" Click="Update_Button_Click"  />
+                <Button x:Name="Delete_Button" Content="Delete" Width="206" Height="54" Background="#FFB22222" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" Margin="0,0,0,10" BorderThickness="0" Click="Delete_Button_Click"  />
+                <Button x:Name="Quit_Button" Content="Quit" Width="209" Height="55" Background="#FF555555" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10" Margin="0,0,0,10" BorderThickness="0" Click="Quit_Button_Click"  />
             </StackPanel>
         </Grid>
 
         <!-- Search Section with Shadows -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,23,0,0" Grid.Row="1">
-            <Button Content="Search" Width="100" Height="35" Background="#FF6B4226" Foreground="White" FontWeight="Bold" Padding="5" Margin="5" BorderThickness="0" />
+            <Button Content="Search" Width="140" Height="47" Background="#FF6B4226" Foreground="White" FontWeight="Bold" Padding="5" Margin="5" BorderThickness="0"  />
             <TextBox Width="150" Height="35" Margin="10,0,0,0" VerticalAlignment="Center" FontSize="13" Padding="5" Background="#FFF7EDE4" BorderBrush="#FFB5651D" BorderThickness="1"/>
             <Label Content="Description:" FontSize="15" VerticalAlignment="Center" Margin="20,0,0,0"/>
             <TextBox Width="200" Height="35" Margin="10,0,0,0" VerticalAlignment="Center" FontSize="13" Padding="5" Background="#FFF7EDE4" BorderBrush="#FFB5651D" BorderThickness="1"/>
