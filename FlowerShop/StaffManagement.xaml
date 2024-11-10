@@ -20,7 +20,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
-            <Button x:Name="btnAdd" Content="Add" Width="127" Click="btnAdd_Click" RenderTransformOrigin="0.5,0.5" Style="{StaticResource ResourceKey=mainButton}" Height="49">
+            <Button x:Name="btnAdd" Content="Thêm " Width="127" Click="btnAdd_Click" RenderTransformOrigin="0.5,0.5" Style="{StaticResource ResourceKey=mainButton}" Height="49">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -30,8 +30,8 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button x:Name="btnUpdate" Content="Update" Width="116" Click="btnUpdate_Click" Style="{StaticResource ResourceKey=mainButton}" Height="51"/>
-            <Button x:Name="btnDelete" Content="Delete" Width="121" Click="btnDelete_Click" Style="{StaticResource ResourceKey=mainButton}"/>
+            <Button x:Name="btnUpdate" Content="Cập nhập " Width="116" Click="btnUpdate_Click" Style="{StaticResource ResourceKey=mainButton}" Height="51"/>
+            <Button x:Name="btnDelete" Content="Xóa" Width="121" Click="btnDelete_Click" Style="{StaticResource ResourceKey=mainButton}"/>
         </StackPanel>
         <Label Content="STAFF MANAGEMENT" HorizontalAlignment="Left" Margin="285,-108,0,0" VerticalAlignment="Top" Height="56" Width="258" FontSize="25"/>
     </Grid>
