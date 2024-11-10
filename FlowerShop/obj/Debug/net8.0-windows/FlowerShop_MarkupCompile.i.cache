@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-F:\ASSIGNMENT_PRN212\AssignmentPRN6\FlowerShop-PRN212\FlowerShop\obj\Debug\net8.0-windows\
+D:\FlowerShop-PRN212\FlowerShop\obj\Debug\net8.0-windows\
 FlowerShop
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-F:\ASSIGNMENT_PRN212\AssignmentPRN6\FlowerShop-PRN212\FlowerShop\App.xaml
+D:\FlowerShop-PRN212\FlowerShop\App.xaml
 8777428539
 
 131576726795
-2461088176573
+246-510203009
 DetailWindow.xaml;Input.xaml;LoginWindow.xaml;MainWindow.xaml;OrderWindow.xaml;PostManagement.xaml;StaffManagement.xaml;UserForm.xaml;
 
 True

@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FlowerShop"
         mc:Ignorable="d"
-        Title="StaffManagement" Height="450" Width="800">
-    <Grid Margin="10">
+        Title="StaffManagement" Height="450" Width="800" Background="#FF61C0AE">
+    <Grid Margin="10,132,10,0" OpacityMask="#FF61C0AE" Background="#FF61C0AE" Height="292" VerticalAlignment="Top">
         <DataGrid x:Name="dtgUsers" AutoGenerateColumns="False" SelectionMode="Single" Margin="0,0,0,50" SelectionChanged="dtgUsers_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
@@ -20,9 +20,19 @@
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
-            <Button x:Name="btnAdd" Content="Add" Width="80" Margin="5" Click="btnAdd_Click"/>
+            <Button x:Name="btnAdd" Content="Add" Width="88" Margin="5" Click="btnAdd_Click" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.467"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
             <Button x:Name="btnUpdate" Content="Update" Width="80" Margin="5" Click="btnUpdate_Click"/>
             <Button x:Name="btnDelete" Content="Delete" Width="80" Margin="5" Click="btnDelete_Click"/>
         </StackPanel>
+        <Label Content="STAFF MANAGEMENT" HorizontalAlignment="Center" Margin="0,-87,0,0" VerticalAlignment="Top" Height="56" Width="258" FontSize="25"/>
     </Grid>
 </Window>
