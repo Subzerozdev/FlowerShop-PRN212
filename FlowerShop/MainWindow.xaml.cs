@@ -59,7 +59,7 @@ namespace FlowerShop
         private void btnLogOut_Click(object sender, RoutedEventArgs e)
         {
             this.CurrentAccount = null;
-            this.Close();
+            App.Current.Shutdown();
         }
 
         private void btnAddToCart_Click(object sender, RoutedEventArgs e)
@@ -100,12 +100,14 @@ namespace FlowerShop
 
         private void btnCategory_Click(object sender, RoutedEventArgs e)
         {
-
+            CategoryManagement categoryManagement = new CategoryManagement();
+            categoryManagement.ShowDialog();
         }
 
         private void btnPost_Click(object sender, RoutedEventArgs e)
         {
             PostManagement postManagement = new PostManagement();
+            postManagement.CurrentAccount = this.CurrentAccount;
             postManagement.ShowDialog();
             Load();
         }
@@ -122,6 +124,23 @@ namespace FlowerShop
             StaffManagement staffManagement = new StaffManagement();
             staffManagement.ShowDialog();
             Load();
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            List<Post> posts = postService.SearchPost(txtName.Text, null);
+            PostFlowerDataGrid.ItemsSource = null;
+            PostFlowerDataGrid.ItemsSource = posts;
+        }
+
+        private void btnRemoveFromCart_Click(object sender, RoutedEventArgs e)
+        {
+            Cart? cart = dgOrderDetail.SelectedItem as Cart;
+            if (cart != null)
+            {
+                Carts.Remove(cart);
+                FillCart();
+            }
         }
     }
 }

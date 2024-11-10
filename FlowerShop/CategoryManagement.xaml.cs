@@ -49,7 +49,7 @@ namespace FlowerShop
 
         private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
-            DetailWindow d = new DetailWindow();
+            CategoryDetailManagement d = new CategoryDetailManagement();
             d.ShowDialog();
             FillDataGrid();
         }
@@ -92,7 +92,7 @@ namespace FlowerShop
 
         private void QuitButton_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            this.Close();
         }
     }
 }

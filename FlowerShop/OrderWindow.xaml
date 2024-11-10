@@ -7,21 +7,21 @@
         mc:Ignorable="d"
         Title="OrderWindow" Height="500" Width="800" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
     <Grid>
-        <Button x:Name="btnPlaceOrder" Content="Place an Order" HorizontalAlignment="Left" Margin="231,380,0,0" VerticalAlignment="Top" Style="{StaticResource mainButton}" Click="btnPlaceOrder_Click"/>
-        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="452,380,0,0" VerticalAlignment="Top" Style="{StaticResource mainButton}" Click="btnCancel_Click"/>
+        <Button x:Name="btnPlaceOrder" Content="ĐẶT HÀNG" HorizontalAlignment="Left" Margin="231,380,0,0" VerticalAlignment="Top" Style="{StaticResource mainButton}" Click="btnPlaceOrder_Click"/>
+        <Button x:Name="btnCancel" Content="HỦY BỎ" HorizontalAlignment="Left" Margin="452,380,0,0" VerticalAlignment="Top" Style="{StaticResource mainButton}" Click="btnCancel_Click"/>
         <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="234,112,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="415" Style="{StaticResource TextBoxStyleO}" Height="36" RenderTransformOrigin="0.865,0.483"/>
         <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Margin="234,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="415" Style="{StaticResource TextBoxStyleO}" Height="36" RenderTransformOrigin="0.865,0.483" VerticalContentAlignment="Top"/>
         <TextBox x:Name="txtNote" HorizontalAlignment="Left" Margin="234,227,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="415" Style="{StaticResource TextBoxStyleO}" Height="57" RenderTransformOrigin="0.865,0.483" VerticalContentAlignment="Top"/>
         <TextBox x:Name="txtFullName" HorizontalAlignment="Left" Margin="234,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="127" Style="{StaticResource TextBoxStyleO}" Height="36"/>
         <TextBox x:Name="txtPhone" HorizontalAlignment="Left" Margin="522,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="127" Style="{StaticResource TextBoxStyleO}" Height="36"/>
         <TextBox x:Name="txtTotalMoney" HorizontalAlignment="Left" Margin="527,311,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122" Style="{StaticResource TextBoxStyleO}" Height="36" IsEnabled="False"/>
-        <Label Content="FullName:" HorizontalAlignment="Left" Margin="146,59,0,0" VerticalAlignment="Top" Style="{StaticResource textBox}"/>
-        <Label Content="PhoneNumber:" HorizontalAlignment="Left" Margin="400,59,0,0" VerticalAlignment="Top" Style="{StaticResource textBox}"/>
+        <Label Content="Khách hàng:" HorizontalAlignment="Left" Margin="146,59,0,0" VerticalAlignment="Top" Style="{StaticResource textBox}"/>
+        <Label Content="Số điện thoại:" HorizontalAlignment="Left" Margin="400,59,0,0" VerticalAlignment="Top" Style="{StaticResource textBox}"/>
         <Label Content="Email:" HorizontalAlignment="Left" Margin="146,116,0,0" VerticalAlignment="Top" Style="{StaticResource textBox}"/>
-        <Label Content="Address:" HorizontalAlignment="Left" Margin="146,169,0,0" VerticalAlignment="Top" Style="{StaticResource textBox}"/>
-        <Label Content="Note:" HorizontalAlignment="Left" Margin="146,0,0,0" VerticalAlignment="Center" Style="{StaticResource textBox}"/>
-        <Label Content="Total:" HorizontalAlignment="Left" Margin="452,315,0,0" VerticalAlignment="Top" Style="{StaticResource textBox}"/>
-        <Label Content="Payment:" HorizontalAlignment="Left" Margin="146,315,0,0" VerticalAlignment="Top" Style="{StaticResource textBox}"/>
+        <Label Content="Địa chỉ:" HorizontalAlignment="Left" Margin="146,169,0,0" VerticalAlignment="Top" Style="{StaticResource textBox}"/>
+        <Label Content="ghi chú:" HorizontalAlignment="Left" Margin="146,0,0,0" VerticalAlignment="Center" Style="{StaticResource textBox}"/>
+        <Label Content="Tổng tiền:" HorizontalAlignment="Left" Margin="452,315,0,0" VerticalAlignment="Top" Style="{StaticResource textBox}"/>
+        <Label Content="Thanh toán:" HorizontalAlignment="Left" Margin="146,315,0,0" VerticalAlignment="Top" Style="{StaticResource textBox}"/>
         <RadioButton x:Name="rbBanking" Content="Banking" HorizontalAlignment="Left" Margin="234,323,0,0" VerticalAlignment="Top" Foreground="Gray" IsChecked="True"/>
         <RadioButton x:Name="rbCOD" Content="COD" HorizontalAlignment="Left" Margin="309,323,0,0" VerticalAlignment="Top" Foreground="Gray"/>
     </Grid>

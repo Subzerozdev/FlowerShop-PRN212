@@ -10,45 +10,51 @@
     <StackPanel Background="WhiteSmoke">
         <Grid Height="40" Background="White">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="20 0">
-                <Button x:Name="btnLogOut" Content="EXIT" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center" Click="btnLogOut_Click"/>
+                <Button x:Name="btnLogOut" Content="THOÁT" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center" Click="btnLogOut_Click"/>
             </StackPanel>
         </Grid>
         <Grid Height="53" Background="#FF3AADA1">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10 0">
-                <Button x:Name="btnHome" Width="212" Content="HOME" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" Click="btnHome_Click"/>
-                <Button x:Name="btnCategory" Width="212" Content="CATEGORY" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" Click="btnCategory_Click"/>
-                <Button x:Name="btnPost" Width="212" Content="POST" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" Click="btnPost_Click"/>
-                <Button x:Name="btnOrder" Width="212" Content="ORDER" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" Click="btnOrder_Click_1"/>
-                <Button x:Name="btnUser" Width="212" Content="USER" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" Click="btnUser_Click"/>
+                <Button x:Name="btnHome" Width="212" Content="TRANG CHỦ" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" Click="btnHome_Click"/>
+                <Button x:Name="btnCategory" Width="212" Content="DANH MỤC" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" Click="btnCategory_Click"/>
+                <Button x:Name="btnPost" Width="212" Content="BÀI ĐĂNG" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" Click="btnPost_Click"/>
+                <Button x:Name="btnOrder" Width="212" Content="ĐƠN HÀNG" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" Click="btnOrder_Click_1"/>
+                <Button x:Name="btnUser" Width="212" Content="NHÂN VIÊN" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" Click="btnUser_Click"/>
             </StackPanel>
         </Grid>
         <Grid Height="508">
-            <DataGrid x:Name="PostFlowerDataGrid" HorizontalAlignment="Left" Height="440" Width="762" AutoGenerateColumns="False" TabIndex="7" 
-                      Style="{StaticResource DataGridStyle}" Margin="0,68,0,0" VerticalAlignment="Top">
+            <DataGrid x:Name="PostFlowerDataGrid" HorizontalAlignment="Left" Height="379" Width="762" AutoGenerateColumns="False" TabIndex="7" 
+                      Style="{StaticResource DataGridStyle}" Margin="0,129,0,0" VerticalAlignment="Top">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Id" Width="50"  Binding="{Binding Id}" ElementStyle="{StaticResource TextBlockStyle}"/>
-                    <DataGridTextColumn Header="Name" Width="100" Binding="{Binding Name}" ElementStyle="{StaticResource TextBlockStyle}"/>
-                    <DataGridTextColumn Header="Thumbnail" Width="150"  Binding="{Binding Thumbnail}" ElementStyle="{StaticResource TextBlockStyle}"/>
-                    <DataGridTextColumn Header="StartDate" Width="80" Binding="{Binding StartDate}" ElementStyle="{StaticResource TextBlockStyle}"/>
-                    <DataGridTextColumn Header="EndDate" Width="80" Binding="{Binding EndDate}" ElementStyle="{StaticResource TextBlockStyle}"/>
-                    <DataGridTextColumn Header="Price" Width="80" Binding="{Binding Price}" ElementStyle="{StaticResource TextBlockStyle}"/>
-                    <DataGridTextColumn Header="Category" Width="80" Binding="{Binding Category.Name}" ElementStyle="{StaticResource TextBlockStyle}"/>
-                    <DataGridTextColumn Header="Address" Width="160"  Binding="{Binding Address}" ElementStyle="{StaticResource TextBlockStyle}"/>
-                    <DataGridTextColumn Header="Description" Width="300"  Binding="{Binding Description}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                    <DataGridTextColumn Header="Tên" Width="100" Binding="{Binding Name}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                    <DataGridTextColumn Header="Ảnh" Width="150"  Binding="{Binding Thumbnail}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                    <DataGridTextColumn Header="Ngày bắt đầu" Width="100" Binding="{Binding StartDate}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                    <DataGridTextColumn Header="Ngày Kết thúc" Width="100" Binding="{Binding EndDate}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                    <DataGridTextColumn Header="Giá" Width="80" Binding="{Binding Price}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                    <DataGridTextColumn Header="Danh mục" Width="80" Binding="{Binding Category.Name}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                    <DataGridTextColumn Header="Địa chỉ" Width="160"  Binding="{Binding Address}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                    <DataGridTextColumn Header="Mô tả" Width="300"  Binding="{Binding Description}" ElementStyle="{StaticResource TextBlockStyle}"/>
 
                 </DataGrid.Columns>
+
             </DataGrid>
+            <Button x:Name="btnSearch" Content="TÌM KIẾM" Style="{StaticResource mainButton}" Margin="70,36,810,413" Click="btnSearch_Click" />
+
             <Grid Margin="762,0,0,0">
-                <Button x:Name="btnAddToCart" Content="Add to Cart" Style="{StaticResource mainButton}" Margin="0,72,0,379" HorizontalAlignment="Center" Width="182" Click="btnAddToCart_Click"/>
-                <Button x:Name="btnOrder1" Content="Place Order" Style="{StaticResource mainButton}" Margin="0,424,0,27" HorizontalAlignment="Center" Width="182" Click="btnOrder_Click" />
-                <DataGrid x:Name="dgOrderDetail" Style="{StaticResource DataGridStyle}" Margin="0,157,0,121" AutoGenerateColumns="False">
+                <Button x:Name="btnAddToCart" Content="THÊM VÀO GIỎ" Style="{StaticResource mainButton}" Margin="10,39,0,412" HorizontalAlignment="Left" Width="137" Click="btnAddToCart_Click"/>
+                <Button x:Name="btnRemoveFromCart" Content="TRẢ VỀ KHO" Style="{StaticResource mainButton}" Margin="171,39,0,412" HorizontalAlignment="Left" Width="137" Click="btnRemoveFromCart_Click"/>
+                <Button x:Name="btnOrder1" Content="ĐẶT HÀNG" Style="{StaticResource mainButton}" Margin="0,424,0,27" HorizontalAlignment="Center" Width="182" Click="btnOrder_Click" />
+                <DataGrid x:Name="dgOrderDetail" Style="{StaticResource DataGridStyle}" Margin="0,129,0,121" AutoGenerateColumns="False">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Num" Width="50" Binding="{Binding Id}" ElementStyle="{StaticResource TextBlockStyle}"/>
-                        <DataGridTextColumn Header="Post" Width="160" Binding="{Binding Post.Name}" ElementStyle="{StaticResource TextBlockStyle}"/>
-                        <DataGridTextColumn Header="Price" Width="110"  Binding="{Binding TotalMoney}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                        <DataGridTextColumn Header="STT" Width="50" Binding="{Binding Id}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                        <DataGridTextColumn Header="Bài Đăng" Width="160" Binding="{Binding Post.Name}" ElementStyle="{StaticResource TextBlockStyle}"/>
+                        <DataGridTextColumn Header="Giá" Width="105"  Binding="{Binding TotalMoney}" ElementStyle="{StaticResource TextBlockStyle}"/>
                     </DataGrid.Columns>
                 </DataGrid>
             </Grid>
+            <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="451,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="218" Height="48" Style="{StaticResource TextBoxStyleO}"/>
+            <Label Content="Tên Bài Đăng" HorizontalAlignment="Left" Margin="340,51,0,0" VerticalAlignment="Top" Style="{StaticResource LabelStyle}"/>
 
         </Grid>
     </StackPanel>

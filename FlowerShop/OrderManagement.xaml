@@ -23,7 +23,7 @@
                 <DataGridTextColumn Header="Nhân viên phụ trách" Width="150"  Binding="{Binding User}" ElementStyle="{StaticResource TextBlockStyle}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Label Content="Order Management" HorizontalAlignment="Center" Margin="0,27,0,0" VerticalAlignment="Top" Style="{StaticResource LabelHeaderStyle}"/>
+        <Label Content="QUẢN LÍ ĐƠN HÀNG" HorizontalAlignment="Center" Margin="0,27,0,0" VerticalAlignment="Top" Style="{StaticResource LabelHeaderStyle}"/>
         <Label Content="Mã đơn hàng" HorizontalAlignment="Left" Margin="58,99,0,0" VerticalAlignment="Top" Style="{StaticResource LabelStyle}"/>
         <Label Content="Tên người đặt" HorizontalAlignment="Left" Margin="58,135,0,0" VerticalAlignment="Top" Style="{StaticResource LabelStyle}"/>
         <Button x:Name="btnSearch" Content="Tìm kiếm" HorizontalAlignment="Left" Margin="385,98,0,0" VerticalAlignment="Top" Style="{StaticResource mainButton}" Height="66" Click="btnSearch_Click" Width="166
@@ -32,6 +32,6 @@
         <TextBox x:Name="txtOrderId" HorizontalAlignment="Left" Margin="189,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164" Style="{StaticResource TextBoxStyleO}" Height="30"/>
         <TextBox x:Name="txtCustomerName" HorizontalAlignment="Left" Margin="189,134,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164" Style="{StaticResource TextBoxStyleO}" Height="30"/>
 
-        <Button x:Name="btnExit" Content="EXIT" BorderBrush="{x:Null}" Background="{x:Null}" HorizontalAlignment="Left" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" Margin="729,10,0,0" VerticalAlignment="Top" Click="btnExit_Click"/>
+        <Button x:Name="btnExit" Content="THOÁT" BorderBrush="{x:Null}" Background="{x:Null}" HorizontalAlignment="Left" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" Margin="729,10,0,0" VerticalAlignment="Top" Click="btnExit_Click"/>
     </Grid>
 </Window>
