@@ -97,5 +97,12 @@ namespace FlowerShop
                 }
             }
         }
+
+        private void Search_Button_Click(object sender, RoutedEventArgs e)
+        {
+            PostsDataGrid.ItemsSource = null;
+            PostsDataGrid.ItemsSource = PostService.SearchPost(PostNameSearchTextBox.Text, DescriptionSearchTextBox.Text);
+
+        }
     }
 }

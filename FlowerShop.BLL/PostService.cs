@@ -31,5 +31,22 @@ namespace FlowerShop.BLL
         {
             _repo.DeletePost(post);
         }
+        public List<Post> SearchPost(string name, string description)
+        {
+            List<Post> result = _repo.GetAllPosts();
+            if (!string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(description))
+            {
+                result = result.Where(x => x.Name.ToLower().Contains(name.ToLower()) || x.Description.ToLower().Contains(description.ToLower())).ToList();
+            }
+            else if (!string.IsNullOrEmpty(name))
+            {
+                result = result.Where(x => x.Name.ToLower().Contains(name.ToLower())).ToList();
+            }
+            else if (!string.IsNullOrEmpty(description))
+            {
+                result = result.Where(x => x.Description.ToLower().Contains(description.ToLower())).ToList();
+            }
+            return result;
+        }
     }
 }
